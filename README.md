@@ -1,18 +1,22 @@
-# Nome do projeto
+# Dificuldade de acesso a terapeutas de acordo com os traumas especificos
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+Nosso projeto tem como objetivo facilitar o acesso de pacientes a atendimentos psicológicos de qualidade que atendam a seus traumas.
+
+Os terapeutas podem utilizar do site para encontrar os pacientes de acordo com a área de atuação.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Alice Cazati
+* Felipe Birchal
+* Gabriel Henrique Carvalhaes
+* Natan Farage
+* Paula Nogueira
+* Vitor Rios
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Carneiro
+* Tamara 
 
 ## Instruções de utilização
 
