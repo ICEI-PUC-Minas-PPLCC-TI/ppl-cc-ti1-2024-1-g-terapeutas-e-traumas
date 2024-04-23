@@ -1,0 +1,82 @@
+# # Apresentação do Projeto # #
+
+
+Alunos integrantes da equipe
+Alice Cazati
+Felipe Birchal
+Gabriel Henrique Carvalhaes
+Natan Farage
+Paula Nogueira
+Vitor Rios
+Contexto do projeto
+O nosso grupo tem como objetivo criar uma plataforma online voltada para facilitar o acesso a terapeutas especializados em traumas específicos. Reconhecemos que muitas pessoas enfrentam dificuldades para encontrar profissionais qualificados para lidar com seus traumas, o que pode prolongar o sofrimento e agravar os sintomas. 
+
+Atualmente, o índice de pessoas com depressão aumentou bastante e ela foi considerada a doença do século. O nosso software ajuda os usuários, com esse ou outros problemas mentais, a procurar ajuda de um terapeuta que se encaixe na sua rotina e no seu bolso, melhorando a sua saúde mental.
+
+Problema:
+Acesso limitado a terapeutas especializados: Muitas pessoas enfrentam dificuldades para encontrar terapeutas capacitados para lidar com traumas específicos e problemas mentais.
+Impacto na saúde mental: A falta de acesso a atendimentos psicológicos de qualidade pode agravar os sintomas e prolongar o sofrimento dos pacientes
+Dificuldade de acesso: Pacientes enfrentam barreiras físicas, financeiras e sociais para encontrar terapeutas adequados às suas necessidades específicas.
+Escassez de profissionais qualificados: O número limitado de terapeutas especializados cria uma demanda maior do que a oferta, resultando em longas listas de espera e tempos de espera prolongados.
+
+Especificação do Projeto
+Para desenvolver o projeto, realizamos uma pesquisa para validar a necessidade da plataforma. A partir dos dados obtidos, mapeamos 3 personas para entender melhor nosso público-alvo:
+
+Marcela
+Igor
+Liliana
+Marcela é uma mulher de 43 anos, mãe de três meninas. No seu tempo livre. Marcela gosta de fazer Taekwondo e pensar sobre os seus sonhos e em como realizá-los. Porém, ultimamente não está conseguindo se distrair muito. O seu trabalho está exigindo muito de si e Marcela não está sabendo enfrentar situações desconfortáveis. Já tem um tempo que Marcela procura um psicólogo. Diz ela que quer começar uma terapia quanto antes.
+Igor é um jovem de 22 anos que ama mexer no seu computador. Ele é trabalhador e deseja ser um empresário de muito sucesso. Igor, ultimamente, está muito depressivo e quase realizou um ato muito preocupante. Por isso, Igor está em busca de um psicólogo, urgentemente, para auxiliar na melhora da sua saúde mental.
+Liliana é uma mulher psicanalista de 48 anos. Liliana adora passar seu tempo livre na natureza, fazendo trilhas e nadando em cachoeiras. Ela é uma pessoa trabalhadora e que tem paixão pela sua profissão. Liliana está em busca de mais clientes, uma vez que um de seus objetivos é ajudar o máximo de pessoas possível.
+
+
+Objetivo do Projeto:
+Facilitar o acesso a atendimentos psicológicos de qualidade: 
+Nosso projeto visa criar uma plataforma online que conecta pacientes a terapeutas especializados em traumas específicos e problemas mentais.
+Reduzir as barreiras para o acesso:
+ A plataforma oferecerá uma maneira conveniente e acessível para os pacientes encontrarem ajuda e receberem apoio emocional.
+
+Justificativa:
+Impacto positivo na saúde mental: Ao facilitar o acesso a terapeutas qualificados, podemos ajudar a melhorar a qualidade de vida e o bem-estar emocional dos pacientes.
+Redução do estigma: Ao fornecer uma plataforma online discreta e acessível, estamos eliminando as barreiras sociais que impedem algumas pessoas de buscar ajuda para sua saúde mental.
+
+Público-Alvo:
+Fundamentais: Terapeutas especializados em tratamento de saúde mental. Pessoas diagnosticadas com transtornos mentais.
+Importantes: Indivíduos em busca de melhoria na saúde mental. Adolescentes enfrentando desafios emocionais. Pessoas que passaram por traumas psicológicos.
+Influenciadores: Pais, responsáveis legais e amigos de pessoas em busca de ajuda para saúde mental.
+
+
+Projeto de Interface
+
+Com base nos resultados da pesquisa, concluímos que uma aplicação web com recursos como busca por terapeutas especializados, suporte profissional e informações sobre cuidados pós-trauma seria a solução ideal. Durante nossas reuniões, desenvolvemos wireframes para o layout da plataforma, que chamamos de" Health.me". 
+
+Protótipo interativo
+https://www.figma.com/file/t9p30MERQti38F3cmLgmOZ/Trabalho-Interdiciplinar?type=design&node-id=31-2946&mode=design&t=VjExeJzYNRjyxYNJ-0
+
+
+
+Metodologia
+
+O desenvolvimento do projeto foi baseado na metodologia SCRUM. Realizamos encontros semanais para definir e revisar as tarefas, e utilizamos um grupo no WhatsApp para comunicação e resolução de dúvidas entre os membros do grupo. Reuniões online também foram realizadas para atualizar o status das tarefas e garantir o progresso do projeto.
+
+Divisão de tarefas -Kanban 
+Team A - HTML
+Felipe Birchal
+Paula Nogueira
+Alice Cazati
+
+Team B- CSS
+Vitor Rios
+Natan Farage
+Gabriel Henrique
+
+
+
+
+Links 
+Miro- https://miro.com/app/board/uXjVKdBQ6pI=/
+Figma-https://www.figma.com/file/t9p30MERQti38F3cmLgmOZ/Trabalho-Interdiciplinar?type=design&node-id=31-2946&mode=design&t=VjExeJzYNRjyxYNJ-0
+
+	
+
+
