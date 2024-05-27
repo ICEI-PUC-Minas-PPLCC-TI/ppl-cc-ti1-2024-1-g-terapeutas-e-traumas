@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 'Outfit',sans-serif;
+}
+body{
+    height: 100vh;
+}
+nav.menu-lateal{
+    width: 60px;
+    height: 70%;
+    background-color:black;
+    border-radius: 20px;
+    padding: 40px 0 40px 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .1s;
+
+}
+nav.menu-lateal:hover{
+    width:250px ;
+}
+.btn-expandir{
+    width: 10%;
+    padding-left: 10px;
+}
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul li.item-menu{
+    transition: .1s;
+
+}
+ul li.ativo{
+    background-color: palevioletred;
+}
+ul li.item-menu:hover{
+    background-color:palevioletred ;
+    border-radius: 7px;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    height: 10px;
+    line-height: 20px;
+    align-items: center;
+
+}
+ul li.item-menu a .txt-link{
+    margin-left: 21px;
+    transition: .2s;
+    position: relative;
+    
+}
+nav.menu-lateal.expandir.txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon >i{
+font-size: 20px;
+margin-left: 10px;
+align-items: center;
+}
+
+.caixa-pesquisa{
+    margin-left: 350px;
+    padding: 30px;
+    width: 500px;
+    align-items: center;   
+}
+.caixa-pesquisa input{
+ width: 550px;
+ height: 45px;
+ border-radius: 30px;
+ margin-top: 0px;
+ 
+ 
+}
+.icon-pesquisa{
+    position: absolute;
+    margin-left: 560px;
+    margin-top: -40px;
+    background-color: palevioletred;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.cadastro{
+    background-color: palevioletred;
+    margin-left: 400px;
+    border-radius: 20px;
+    width: 500px;
+    height: 470px;
+}
+button{
+    background-color: black;
+    direction: none;
+    color: white;
+}
+
+.item-perfil{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cadastro {
+    margin-left: 500px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    box-sizing: border-box;
+    margin-left: -160px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="email"],
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+form fieldset legend {
+    font-weight: bold;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    background-color: rgb(247, 0, 123);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(247, 0, 123);
+}
+ 
+/*Tela Pequena*/
+@media screen and (max-width: 1020px) {
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        padding: 20px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    .menu-lateral ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .caixa-pesquisa {
+        position: relative;
+        margin-left: 0%;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 10px 0px 80px;
+    }
+    .caixa-pesquisa input{
+        width: 80%;
+    }
+   .icon-pesquisa{
+     margin: 0 5px;
+    
+   }
+
+    .perfil {
+        position: relative;
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+
+    .cadastro {
+        margin: 0;
+        padding: 35px 10px 0px 80px;
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+
+/*Tela Grande*/
+@media screen and (min-width: 1021px) {
+
+    /* Menu lateral na lateral */
+    nav.menu-lateal {
+        position: flex;
+        left: 0;
+        top: 2%;
+        height: 100%;
+        background-color: black;
+        padding: 20px;
+    }
+
+    /* Ajustar posição da barra de pesquisa */
+    .caixa-pesquisa {
+        position: absolute;
+        top: 5%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Alinhar perfil no canto superior direito */
+    .perfil {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    /* Ajustar margem à direita do conteúdo principal */
+    .media {
+        margin-left: 250px; /* Largura do menu lateral */
+    }
+
+    /* Ajustar margem à direita do formulário */
+    .cadastro {
+        margin-left: 250px; /* Largura do menu lateral */
+        width: 100%; /* Largura do formulário */
+        padding: 75px 20px 20px 0px;
+        top: 10%;
+    }
+}
