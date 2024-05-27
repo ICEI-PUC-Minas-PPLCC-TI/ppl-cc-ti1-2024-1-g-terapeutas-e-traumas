@@ -1,0 +1,46 @@
+{
+    "Pef_favoritos": [
+        {
+            "nome": "Dra. Ana Costa",
+            "image": "images/Dra.Ana_Costa.jpg",
+            "area": "Psiquiatria Infantil"
+        },
+        {
+            "nome": "Dr. Joao_Silva",
+            "image": "images/Dr.Joao_Silva.jpg",
+            "area": "Psiquiatria Geriatrica"
+        },
+        {
+            "nome": "Dr. Luis Dias",
+            "image": "images/Dr.Luis_Dias.jpg",
+            "area": "Psiquiatria Forense"
+        },
+        {
+            "nome": "Dra. Rosa Lima",
+            "image": "images/Dra.Rosa_Lima.jpg",
+            "area": "Psiquiatria de Adições"
+        },
+        {
+            "nome": "Dr. Felipe Souza",
+            "image": "images/Dr.Felipe_Souza.jpg",
+            "area": "Psiquiatria Biológica"
+        },
+        {
+            "nome": "Dr. José Pinto",
+            "image": "images/Dr.Jose_Pinto.jpg",
+            "area": "Psiquiatria de Adultos"
+        },
+        {
+            "nome": "Dra. Ana Prado",
+            "image": "images/Dra.Ana_Prado.jpg",
+            "area": "Psiquiatria Cultural"
+        },
+        {
+            "nome": "Dra.Bianca Pires",
+            "image": "images/Dra.Bianca_Pires.jpg",
+            "area": "Neuropsiquiatria"
+        }
+    ]
+}
+
+
