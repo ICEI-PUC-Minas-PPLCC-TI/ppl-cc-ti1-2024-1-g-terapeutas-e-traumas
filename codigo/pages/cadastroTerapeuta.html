@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health-me</title>
+    <link rel="stylesheet" href="cadastroTerapeuta.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="media">
+    
+        <nav class="menu-lateal">
+        <div class="btn-expandir">
+            <i class="bi bi-list"></i>
+        </div>
+       
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Menu</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-bookmark"></i></span>
+                    <span class="txt-link">Favoritos</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-star"></i></span>
+                    <span class="txt-link">Avaliação</span>
+                </a>
+            </li>
+        </ul>
+       
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-alarm"></i></span>
+                    <span class="txt-link">Recentes</span>
+                </a>
+            </li>
+        </ul>
+        
+        <ul>
+            <li class="item-menu ativo" onclick="toggle('cadastro')">
+                <a href="#">
+                    <script src="cadastroTerapeuta.js"></script>
+                    <span class="icon"><i class="bi bi-journal"></i> </span>
+                    <span class="txt-link">Cadastre-se como terapeuta</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
+                    <span class="txt-link">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script src="cadastroTerapeuta.js"></script>
+    <div class="caixa-pesquisa">
+        <input type="text" placeholder="  Digite aqui...">
+        <a href="#">
+        <span class="icon-pesquisa"><i class="bi bi-search"></i></span>
+        </a>
+    </div>
+    <div class="perfil">
+        <a class="item-perfil" href="#">
+            <span class="icon-perfil"><i class="bi bi-person-circle"></i> </span>
+            <span class="txt-perfil">Carolina Duarte</span>
+        </a>
+    </div>
+
+    <div id="cadastro" class="cadastro">
+        <h1>Cadastro do Terapeuta</h1>
+        <form id="cadastroForm">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" value="" required><br>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Outro">Outro</option>
+            </select><br>
+
+            <label for="anos_de_experiencia">Anos de Experiência:</label>
+            <input type="number" id="anos_de_experiencia" name="anos_de_experiencia" value="" required><br>
+
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" name="especialidade" value="" required><br>
+
+            <label for="crp">CRP:</label>
+            <input type="text" id="crp" name="crp" value="" required><br>
+
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" value="" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Modalidade</legend>
+                <input type="checkbox" id="modalidade_online" name="modalidade" value="online">
+                <label for="modalidade_online">Online</label><br>
+                <input type="checkbox" id="modalidade_presencial" name="modalidade" value="presencial">
+                <label for="modalidade_presencial">Presencial</label><br>
+            </fieldset>
+
+            <label for="preco_da_hora">Preço da Hora:</label>
+            <input type="number" id="preco_da_hora" name="preco_da_hora" value="" required><br>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" value="" required><br>
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" value="" required><br>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" value=""><br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" value="" required><br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" value="" required><br>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" value="" required><br>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" value="" required><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Planos Médicos</legend>
+                <input type="checkbox" id="plano_saude_a" name="planos_medicos" value="UNIMED">
+                <label for="plano_saude_a">UNIMED</label><br>
+                <input type="checkbox" id="plano_saude_b" name="planos_medicos" value="SulAmerica">
+                <label for="plano_saude_b">SulAmerica</label><br>
+                <input type="checkbox" id="plano_saude_c" name="planos_medicos" value="Amil">
+                <label for="plano_saude_c">Amil</label><br>
+            </fieldset>
+
+            <button type="button" onclick="submitForm()">Confirmar</button>
+        </form>
+    </div>
+
+    <script>
+        function showSuccessPopup() {
+            alert("Formulario enviado com sucesso");
+        }
+
+        function submitForm() {
+            const form = document.getElementById('cadastroForm');
+            const formData = new FormData(form);
+
+            const terapeuta = {
+                idade: formData.get('idade'),
+                genero: formData.get('genero'),
+                anos_de_experiencia: formData.get('anos_de_experiencia'),
+                especialidade: formData.get('especialidade'),
+                crp: formData.get('crp'),
+                contato: {
+                    telefone: formData.get('telefone'),
+                    email: formData.get('email')
+                },
+                modalidade: [],
+                preco_da_hora: formData.get('preco_da_hora'),
+                endereco: {
+                    rua: formData.get('rua'),
+                    numero: formData.get('numero'),
+                    complemento: formData.get('complemento'),
+                    bairro: formData.get('bairro'),
+                    cidade: formData.get('cidade'),
+                    estado: formData.get('estado'),
+                    cep: formData.get('cep')
+                },
+                planos_medicos: []
+            };
+
+            if (formData.get('modalidade') === 'online') terapeuta.modalidade.push('online');
+            if (formData.get('modalidade') === 'presencial') terapeuta.modalidade.push('presencial');
+            
+            if (formData.get('planos_medicos') === 'UNIMED') terapeuta.planos_medicos.push('UNIMED');
+            if (formData.get('planos_medicos') === 'SulAmerica') terapeuta.planos_medicos.push('SulAmerica');
+            if (formData.get('planos_medicos') === 'Amil') terapeuta.planos_medicos.push('Amil');
+
+            fetch('http://localhost:3000/terapeutas', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(terapeuta)
+            })
+            .then(response => response.json())
+            .then(data => {
+                showSuccessPopup();
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+    </div>
+</body>
+</html>
