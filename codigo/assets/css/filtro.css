@@ -1,0 +1,265 @@
+/* Ajuste do menu esquerdo */
+
+body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+.Menu_Lateral { width: 250px; height: 100vh; background-color: black; color: white; padding: 20px; box-sizing: border-box; position: fixed; top: 0; left: 0; }
+
+.Nome_site h1 { margin: 0; font-size: 24px; color: white; }
+
+.Opções_Menu { list-style: none; padding: 0; margin-top: 20px; }
+
+.Opções_Menu h3 { margin-bottom: 10px; }
+
+.Opções_Menu ul { margin-bottom: 10px; }
+
+.Opções_Menu ul img { vertical-align: middle; margin-right: 10px; }
+
+.Opções_Menu ul a { color: white; text-decoration: none; }
+
+.Cdt_Terap { position: absolute; bottom: 20px; left: 20px; }
+
+/* Ajuste da parte central do filtro */
+
+.Filtro_de_Seleção { background-color: #ffe6e6; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+.Filtro_Aberto { display: flex; flex-direction: column; align-items: center; width: 80%; margin: auto; }
+
+.Filtro_Aberto section, .Filtro_Aberto select, .Filtro_Aberto input, .Filtro_Aberto label { width: 100%; max-width: 400px; margin: 10px 0; text-align: center; }
+
+.Filtro_Aberto h1 { margin-bottom: 20px; }
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    margin: 40px auto;
+  }
+
+  #close-popup {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #close-popup:hover {
+    background-color: #3e8e41;
+  }
+
+
+
+
+/* CSS PARA A BARRA DE PESQUISA */
+
+.caixa-pesquisa{ margin-left: 350px; padding: 30px; width: 500px; align-items: center;
+
+} .caixa-pesquisa input{ width: 550px; height: 45px; border-radius: 30px; margin-top: 0px;
+
+} .icon-pesquisa{ position: absolute; margin-left: 560px; margin-top: -40px; background-color: palevioletred; border-radius: 100px; padding: 10px 20px; color: black; }
+
+@media screen and (max-width: 768px) {
+    .Menu_Lateral {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .Nome_site h1 {
+      text-align: center;
+    }
+    .Opções_Menu {
+      margin-top: 0;
+    }
+    .Opções_Menu ul {
+      display: block;
+      width: 100%;
+    }
+    .Opções_Menu ul img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .Opções_Menu ul a {
+      display: block;
+      padding: 10px;
+    }
+    .Cdt_Terap {
+      position: static;
+      margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .Filtro_de_Seleção {
+      width: 100%;
+      padding: 20px;
+    }
+    .Filtro_Aberto {
+      width: 100%;
+    }
+    .Filtro_Aberto section, .Filtro_Aberto select, .Filtro_Aberto input, .Filtro_Aberto label {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .caixa-pesquisa {
+      margin-left: 0;
+      width: 100%;
+    }
+    .caixa-pesquisa input {
+      width: 100%;
+    }
+    .icon-pesquisa {
+      margin-left: 10px;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .item-perfil {
+      margin-left: 0;
+      position: static;
+      margin-top: 20px;
+    }
+  }
+
+  .caixa-pesquisa {
+    margin-left: 465px;
+    padding: 30px;
+    width: 500px;
+    align-items: center;
+}
+
+.caixa-pesquisa input {
+    width: 550px;
+    height: 55px;
+    border-radius: 30px;
+    margin-top: 0px;
+}
+
+.icon-pesquisa {
+    position: absolute;
+    margin-left: 565px;
+    margin-top: -46px;
+    background-color: palevioletred;
+    border-radius: 100px;
+    padding: 11px 20px;
+    color: black;
+}
+
+.botãoFiltro {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -53px;
+    background-color: palevioletred;
+    border-radius: 100px;
+    padding: 1px 10px;
+    color: black;
+}
+
+/*Tela Pequena*/
+@media screen and (max-width: 1020px) {
+  .menu-lateral {
+      width: 100%;
+      height: auto;
+      position: relative;
+      flex-direction: column;
+      padding: 20px 0px 0px 0px;
+      justify-content: center;
+  }
+
+  .menu-lateral ul {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  .caixa-pesquisa {
+      position: relative;
+      margin-left: 0%;
+      width: 100%;
+      justify-content: center;
+      padding: 10px 10px 0px 80px;
+  }
+  .caixa-pesquisa input{
+      width: 80%;
+  }
+ .icon-pesquisa{
+   margin: 0 5px;
+  
+ }
+
+  .perfil {
+      position: relative;
+      margin-top: 10px;
+      margin-left: 85px;
+  }
+
+  .cadastro {
+      margin: 0;
+      padding: 35px 10px 0px 80px;
+      width: 100%;
+  }
+
+  form {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+  }
+}
+
+
+/*Tela Grande*/
+@media screen and (min-width: 1021px) {
+
+  /* Menu lateral na lateral */
+  nav.menu-lateal {
+      position: flex;
+      left: 0;
+      top: 2%;
+      height: 100%;
+      background-color: black;
+      padding: 20px;
+  }
+
+  /* Ajustar posição da barra de pesquisa */
+  .caixa-pesquisa {
+      position: absolute;
+      top: 5%;
+      left: 18%;
+      transform: translate(-50%, -50%);
+  }
+
+  /* Alinhar perfil no canto superior direito */
+  .perfil {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+  }
+
+  /* Ajustar margem à direita do conteúdo principal */
+  .media {
+      margin-left: 250px; /* Largura do menu lateral */
+  }
+
+  /* Ajustar margem à direita do formulário */
+  .cadastro {
+      margin-left: 250px; /* Largura do menu lateral */
+      width: 100%; /* Largura do formulário */
+      padding: 75px 20px 20px 0px;
+      top: 10%;
+  }
+}
