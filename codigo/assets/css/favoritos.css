@@ -1,0 +1,585 @@
+/* Celular */
+@media only screen and (max-width: 480px) {
+
+    body,
+    ul {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Cardapio {
+        background-color: black;
+    }
+
+    .Aba_Menu {
+        overflow: hidden;
+        justify-content: flex-end;
+
+    }
+
+    .Aba_Menu h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border: 0;
+        display: flex;
+        margin-left: 185px;
+
+    }
+
+    .topicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        margin-bottom: 10px;
+    }
+
+
+    .topicos li {
+        display: none;
+        margin-bottom: 4px;
+    }
+
+    .topicos li a {
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+
+    .topicos li a:hover {
+        background-color: #222222;
+        border-radius: 10px;
+    }
+
+    .topicos li.Favoritos a {
+        color: rgb(179, 122, 155);
+    }
+
+    .topicos li a img {
+        display: none;
+    }
+
+    .topicos.active li {
+        display: flex;
+
+
+    }
+
+    .topicos.active li a {
+        display: block;
+    }
+
+    .topicos.active {
+        margin-top: 50px;
+        max-height: 700px;
+        margin-bottom: 40px;
+    }
+
+    .Aba_Favoritos {
+        background-color: rgb(241, 181, 216);
+        padding: 5px;
+        padding-bottom: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .Ses_Favoritados {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Caixa_Favoritados {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .Favoritados img.Imagem_perfil {
+
+        border: 2px solid #ffd8df;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .Perfil {
+        font-size: medium;
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+    }
+
+    .Perfil:hover {
+        background-color: rgb(179, 122, 155);
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .Especializacao {
+        margin-left: 0 auto;
+        color: rgb(155, 62, 142);
+        font-size: small;
+    }
+
+    .excluir-perfil {
+        background-color: rgb(179, 122, 155);
+        color: black;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-right: 50px;
+        margin-left: 13%;
+    }
+
+    .Favoritados-info button.excluir-perfil {
+        margin-bottom: 20px;
+        margin-left: 33%;
+    }
+
+    .excluir-perfil:hover {
+        background-color: rgb(155, 62, 142);
+    }
+
+    .Sem_Favoritos {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 1100px) {
+
+    body,
+    ul {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Cardapio {
+        background-color: black;
+    }
+
+    .Aba_Menu {
+        overflow: hidden;
+        justify-content: flex-end;
+
+    }
+
+    .Aba_Menu h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border: 0;
+        display: flex;
+        margin-left: 364px;
+
+    }
+
+    .topicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+        margin-bottom: 10px;
+    }
+
+    .topicos li {
+        display: none;
+        margin-bottom: 4px;
+    }
+
+    .topicos li a {
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+
+    .topicos li a:hover {
+        background-color: #222222;
+        border-radius: 10px;
+    }
+
+    .topicos li.Favoritos a {
+        color: rgb(179, 122, 155);
+    }
+
+    .topicos li a img {
+        display: none;
+    }
+
+    .topicos.active li {
+        display: flex;
+    }
+
+    .topicos.active li a {
+        display: block;
+    }
+
+    .topicos.active {
+        margin-top: 50px;
+        max-height: 700px;
+        margin-bottom: 40px;
+    }
+
+    .Aba_Favoritos {
+        background-color: rgb(241, 181, 216);
+        padding: 5px;
+        padding-bottom: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .Ses_Favoritados {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Caixa_Favoritados {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .Favoritados img.Imagem_perfil {
+
+        border: 2px solid #ffd8df;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .Perfil {
+        font-size: medium;
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+    }
+
+    .Perfil:hover {
+        background-color: rgb(179, 122, 155);
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .Especializacao {
+        margin-left: 0 auto;
+        color: rgb(155, 62, 142);
+        font-size: small;
+    }
+
+    .excluir-perfil {
+        background-color: rgb(179, 122, 155);
+        color: black;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin-right: 50px;
+        margin-left: 7%;
+    }
+
+    .Favoritados-info button.excluir-perfil {
+        margin-left: 42%;
+        margin-bottom: 20px;
+    }
+
+    .excluir-perfil:hover {
+        background-color: rgb(155, 62, 142);
+    }
+
+    .Sem_Favoritos {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 1101px) {
+
+    Copy code body,
+    html {
+        background-color: rgb(246, 240, 226);
+        margin: 0;
+        padding: 0;
+    }
+
+    .Aba_Menu {
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .Logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .Logo h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+
+    .relogio {
+        margin-top: 15px;
+        margin-left: 13.5%;
+    }
+
+    .topicos {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .topicos li {
+        margin-bottom: 10px;
+    }
+
+    .topicos li a {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 25px;
+        display: block;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+    .topicos h2 {
+        color: white;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+    }
+
+    .topicos li.Menu a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Ficha a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Favoritos a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Favoritos a {
+        color: rgb(241, 181, 216);
+    }
+
+    .topicos li.Log_out a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Cad_Tera a {
+        width: 80%;
+        font-size: medium;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 15px;
+        margin-top: 30%;
+        background-color: rgb(241, 181, 216);
+        border-radius: 10px;
+        color: black;
+    }
+
+    .topicos li.Cad_Tera a img {
+        display: block;
+        margin-left: 38%;
+        padding: 2px;
+        border-radius: 6px;
+    }
+
+    .topicos li.Cad_Tera a:hover {
+        background-color: #3d3d3d;
+
+
+
+
+    }
+
+    .topicos li a:hover {
+        background-color: #222222;
+        border-radius: 5px;
+    }
+
+    .Aba_Favoritos {
+        max-width: 800px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 5%;
+        display: flex;
+    }
+
+    .Ses_Favoritados {
+        background-color: rgb(241, 181, 216);
+        border-radius: 20px;
+        padding-left: 8px;
+        padding: 20px;
+        max-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Caixa_Favoritados {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .Favoritados {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Favoritados img.Imagem_perfil {
+        width: 120px;
+        height: 120px;
+        border: 2px solid #ffd8df;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+
+    }
+
+    .Favoritados-info {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .Perfil {
+        font-size: medium;
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+
+    }
+
+    .Perfil:hover {
+        background-color: rgb(179, 122, 155);
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .Especializacao 
+    {
+        margin-left: 0 auto;
+        color: rgb(155, 62, 142);
+        font-size: small;
+
+
+    }
+
+    .Favoritados-info 
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Perfil 
+    {
+        font-size: medium;
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .Especializacao 
+    {
+        margin-left: 0 auto;
+        color: rgb(155, 62, 142);
+        font-size: small;
+    }
+
+    .excluir-perfil 
+    {
+        background-color: rgb(179, 122, 155);
+        color: black;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .excluir-perfil:hover
+    {
+        background-color: rgb(155, 62, 142);
+    }
+
+    .Sem_Favoritos 
+    {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
+    }
+
+    .hamburger 
+    {
+        display: none;
+    }
+}
