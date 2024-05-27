@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health.me</title>
+</head>
+<body>
+    <nav class="menu-lateral">
+        <h1>Health.me</h1>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-menu">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-bookmarks"></i></span>
+                    <span class="txt-menu">Favoritados</span>
+                </a>
+            </li>
+            <li class="item-menu" id="Perfil">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-person"></i></span>
+                    <span class="txt-menu">Perfil</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="txt-menu">Log out</span>
+                </a>
+            </li>
+        </ul>
+        <div class="cadastro">
+            <a href="#">
+                <i class="bi bi-clipboard-check"></i>
+                <p><strong>Cadastre-se como terapeuta: Clique aqui</strong></p>
+            </a>
+        </div>
+    </nav>
+    <i class="bi bi-list menu-toggle" id="menu-toggle"></i> 
+    <footer class="comentario">
+        <div class="head"><h1>Comentários</h1></div><hr>
+        <div class="text"><p>Estamos felizes em ouvir você</p></div>
+        <div class="comments"></div>
+        <div class="commentbox">
+            <img src="./image/user1.png" alt="imagem da pessoa">
+            <div class="content">
+                <h2>Comente Aqui:</h2>
+                <input type="text" value="Anônimo" class="user">
+                
+                <div class="commentinput">
+                     <input type="text" placeholder="Comentário " class="usercomment">
+                     <star-rater data-rating="0"></star-rater>
+                     <div class="buttons">
+                            <button type="submit" disabled id="publish">Publicar</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
