@@ -1,4 +1,60 @@
+
+
+
+
 {
+    "terapeutas": [
+        {
+            "id": 1,
+            "name": "Sofia Duarte",
+            "specialty": "Terapia de Casal",
+            "disponibilidade": [4, 2, 5],
+            "image": "https://randomuser.me/api/portraits/women/37.jpg"
+        },
+        {
+            "id": 2,
+            "name": "João Silva",
+            "specialty": "Terapia Cognitiva",
+            "disponibilidade": [5, 3, 6],
+            "image": "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Mariana Lima",
+            "specialty": "Terapia de Grupo",
+            "disponibilidade": [3, 4, 5],
+            "image": "https://randomuser.me/api/portraits/women/55.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Carlos Souza",
+            "specialty": "Terapia de Aceitação e Compromisso",
+            "disponibilidade": [5, 6, 2],
+            "image": "https://randomuser.me/api/portraits/men/45.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Ana Ferreira",
+            "specialty": "Terapia Reichiana",
+            "disponibilidade": [2, 6, 3],
+            "image": "https://randomuser.me/api/portraits/women/60.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Lucas Costa",
+            "specialty": "Terapia de Família",
+            "disponibilidade": [2, 3],
+            "image": "https://randomuser.me/api/portraits/men/67.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Bianca Santos",
+            "specialty": "Terapia de Exposição e Prevenção de Resposta",
+            "disponibilidade": [4, 6, 2],
+            "image": "https://randomuser.me/api/portraits/women/61.jpg"
+        }
+    ],
+
     "Pef_favoritos": [
         {
             "nome": "Dra. Ana Costa",
