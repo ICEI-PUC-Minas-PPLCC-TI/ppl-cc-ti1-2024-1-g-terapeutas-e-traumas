@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 'Outfit',sans-serif;
+}
+body{
+    height: 100vh;
+}
+nav.menu-lateal{
+    width: 60px;
+    height: 70%;
+    background-color:black;
+    border-radius: 20px;
+    padding: 40px 0 40px 1%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .1s;
+    
+}
+nav.menu-lateal:hover{
+    width:250px ;
+}
+.btn-expandir{
+    width: 10%;
+    padding-left: 10px;
+}
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul li.item-menu{
+    transition: .1s;
+
+}
+ul li.ativo{
+    background-color: palevioletred;
+}
+ul li.item-menu:hover{
+    background-color:palevioletred ;
+    border-radius: 7px;
+
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    height: 10px;
+    line-height: 20px;
+    align-items: center;
+
+}
+ul li.item-menu a .txt-link{
+    margin-left: 21px;
+    transition: .2s;
+    position: relative;
+    
+}
+nav.menu-lateal.expandir.txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon >i{
+font-size: 20px;
+margin-left: 10px;
+align-items: center;
+}
+
+.caixa-pesquisa{
+    border-radius: 100px;
+    margin-left: 350px;
+    padding: 30px;
+    width: 500px;
+    
+   
+   
+}
+.caixa-pesquisa input {
+ width: 550px;
+ height: 45px;
+ margin-top: 0px;
+ 
+ 
+}
+.icon-pesquisa{
+    position: absolute;
+    margin-left: 555px ;
+    margin-top: 0px;
+    background-color: palevioletred;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: black;
+    margin-top:  -45px;
+}
+a{
+    text-decoration: none;
+}
+
+.item-perfil{
+    
+    margin-left: 1090px;
+    position: absolute;
+    margin-top: -60px;
+    color: black;
+}
+
+.txt-perfil{
+    font-size: large;
+    padding: 5px;
+}
+
+.calendar-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: 800px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#month-year {
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: pink;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody td {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+tbody td:hover {
+    background-color:pink;
+}
+.therapist-container {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: 265px;
+    margin-top: -300px;
+
+}
+
+.therapist-container h2 {
+    margin-top: 0;
+}
+
+.therapist-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.therapist-container ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.therapist-container ul li:last-child {
+    border-bottom: none;
+}
+.therapist-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    nav.menu-lateal {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    nav.menu-lateal:hover {
+        width: 100%;
+    }
+
+    .caixa-pesquisa {
+        margin-left: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .caixa-pesquisa input {
+        width: 100%;
+    }
+
+    .item-perfil {
+        margin-left: 0;
+        margin-top: 0;
+        position: relative;
+        text-align: center;
+    }
+
+
+    .icon-pesquisa {
+        margin-left: 5px;
+    }
+
+    .calendar-container,
+    .therapist-container {
+        width: 100%;
+        margin: 20px auto;
+        max-width: 500px;
+    }
+}
