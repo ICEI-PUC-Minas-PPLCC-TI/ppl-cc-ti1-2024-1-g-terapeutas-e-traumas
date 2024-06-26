@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+nav.menu-lateal {
+    width: 60px;
+    height: 70%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 40px 0 40px 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .1s;
+}
+
+nav.menu-lateal:hover {
+    width: 250px;
+}
+
+.btn-expandir {
+    width: 10%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul li.item-menu {
+    transition: .1s;
+}
+
+ul li.ativo {
+    background-color: palevioletred;
+}
+
+ul li.item-menu:hover {
+    background-color: palevioletred;
+    border-radius: 7px;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    height: 10px;
+    line-height: 20px;
+    align-items: center;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 21px;
+    transition: .2s;
+    position: relative;
+}
+
+nav.menu-lateal.expandir.txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 20px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.caixa-pesquisa {
+    margin-left: 350px;
+    padding: 30px;
+    width: 500px;
+    align-items: center;   
+    z-index: 1000;
+}
+
+.caixa-pesquisa input {
+    width: 550px;
+    height: 45px;
+    border-radius: 30px;
+    margin-top: 0px;
+}
+
+.icon-pesquisa {
+    position: absolute;
+    margin-left: 560px;
+    margin-top: -40px;
+    background-color: palevioletred;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.consulta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#agenda {
+    background-color: rgb(243, 145, 178);
+    border-radius: 20px;
+    width: 70%; 
+    margin-left: 6%; 
+    margin-top: 10%;
+    padding: 2% 2% 10% 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.agenda h1 {
+    color: black;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.consulta .circle-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.consulta .circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.agenda h2, .agenda h3, .agenda h4 {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.agenda p {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container button {
+    background-color: rgb(141, 59, 86);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: rgb(219, 65, 117);
+}
+
+button {
+    background-color: black;
+    direction: none;
+    color: white;
+}
+
+.item-perfil {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Sem_Consultas {
+    font-size: 20px !important;
+    font-family: 'Outfit', sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+    align-self: center;
+}
+
+#agenda {
+    transition: height 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1020px) {
+    body {
+        height: fit-content;
+    }
+
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        padding: 20px 0px 0px 0px;
+        justify-content: center;
+    }
+
+    .menu-lateral ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .caixa-pesquisa {
+        position: inherit;
+        margin-left: 0%;
+        width: 100%;
+        justify-content: center;
+        padding: 10px 10px 0px 80px;
+    }
+
+    .caixa-pesquisa input {
+        width: 80%;
+    }
+
+    .icon-pesquisa {
+        margin: 0 5px;
+    }
+
+    .perfil {
+        position: relative;
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #agenda {
+        grid-template-columns: 1fr;
+        width: 85%;
+        margin: 8% 1% 15% 8%;
+        height: auto !important;
+        min-height: fit-content !important;
+        gap: 45px;
+    }
+
+    .consulta {
+        width: 100%;
+    }
+
+    .caixa-pesquisa input {
+        width: 80%; 
+        margin-top: 5px;
+        left: auto;
+    }
+
+    .perfil {
+        position: auto;
+        top: 10px;
+        right: 20px;
+        left: 10px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    nav.menu-lateal {
+        position: flex;
+        left: 0;
+        top: 2%;
+        height: 100%;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .caixa-pesquisa {
+        position: absolute;
+        top: 5%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+    }
+
+    .perfil {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .media {
+        margin-left: 250px;
+    }
+
+    .consulta-nome {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+}
