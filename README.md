@@ -14,8 +14,8 @@ Os terapeutas podem utilizar do site para encontrar os pacientes de acordo com a
 
 ## Professores responsáveis
 
-* Rommel Carneiro
-* Tamara 
+* Rommel Vieira Carneiro
+* Tamara Simões Silva
 
 ## Instruções de utilização
 
