@@ -9,12 +9,10 @@ authors:
     given-names: Alice
   - family-names: Henrique Carvalhaes
     given-names: Gabriel
-  - family-names: 
+  - family-names: Birchal Borges
     given-names: Felipe
-  - family-names: 
+  - family-names: Farage Cohen
     given-names: Natan
-  - family-names: 
-    given-names:
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Vieira Carneiro
@@ -24,9 +22,10 @@ authors:
     family-names: Simões Silva
     given-names: Tamara
 keywords:
-  - 
-  - 
-repository-code: 
+  - Saúde mental 
+  - Acessibilidade
+  - Empatia
+repository-code: https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-1-terapeutas-e-traumas 
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2024-06-30
