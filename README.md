@@ -6,11 +6,11 @@ Os terapeutas podem utilizar do site para encontrar os pacientes de acordo com a
 
 ## Alunos integrantes da equipe
 
-* Alice Cazati
-* Felipe Birchal
+* Alice Cazati Haddad Debien
+* Felipe Birchal Borges
 * Gabriel Henrique Carvalhaes
-* Natan Farage
-* Paula Nogueira
+* Natan Farage Cohen
+* Paula de Nogueira Castro Carvalho
 
 ## Professores responsáveis
 
