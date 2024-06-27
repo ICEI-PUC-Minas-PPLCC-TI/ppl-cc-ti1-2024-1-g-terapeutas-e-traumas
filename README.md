@@ -11,7 +11,6 @@ Os terapeutas podem utilizar do site para encontrar os pacientes de acordo com a
 * Gabriel Henrique Carvalhaes
 * Natan Farage
 * Paula Nogueira
-* Vitor Rios
 
 ## Professores responsáveis
 
