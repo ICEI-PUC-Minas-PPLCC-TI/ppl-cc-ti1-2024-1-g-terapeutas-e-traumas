@@ -47,7 +47,7 @@ function submitForm() {
     if (formData.get('planos_medicos') === 'SulAmerica') terapeuta.planos_medicos.push('SulAmerica');
     if (formData.get('planos_medicos') === 'Amil') terapeuta.planos_medicos.push('Amil');
 
-    fetch('http://localhost:3000/terapeutas', {
+    fetch('http://localhost:3000/Cadastro', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
