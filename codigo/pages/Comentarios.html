@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,7 +13,7 @@
         <h1>Health.me</h1>
         <ul>
             <li class="item-menu">
-                <a href="#">
+                <a href="cadastroTerapeuta.html">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-menu">Home</span>
                 </a>
@@ -37,6 +37,10 @@
                 </a>
             </li>
         </ul>
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+        </div>
         <div class="cadastro">
             <a href="#">
                 <i class="bi bi-clipboard-check"></i>
@@ -48,23 +52,23 @@
     <footer class="comentario">
         <div class="head"><h1>Comentários</h1></div><hr>
         <div class="text"><p>Estamos felizes em ouvir você</p></div>
-        <div class="comments"></div>
         <div class="commentbox">
             <img src="../assets/images/user1.png" alt="imagem da pessoa">
             <div class="content">
                 <h2>Comente Aqui:</h2>
                 <input type="text" value="Anônimo" class="user">
-                
                 <div class="commentinput">
-                     <input type="text" placeholder="Comentário " class="usercomment">
-                     <star-rater data-rating="0"></star-rater>
-                     <div class="buttons">
-                            <button type="submit" disabled id="publish">Publicar</button>
-                     </div>
+                    <input type="text" placeholder="Comentário " class="usercomment">
+                    <star-rater data-rating="0"></star-rater>
+                    <div class="buttons">
+                        <button type="submit" disabled id="publish">Publicar</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="comments"></div>
     </footer>
     <script src="../assets/js/comentario.js"></script>
+    <script src="../assets/js/menu.js"></script>
 </body>
 </html>

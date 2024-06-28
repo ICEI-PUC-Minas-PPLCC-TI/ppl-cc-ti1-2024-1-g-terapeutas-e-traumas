@@ -77,6 +77,9 @@ customElements.define('star-rater', StarRater);
 
 // Comentário
 
+const commentKey = 'comments';
+let commentsData = JSON.parse(localStorage.getItem(commentKey)) || [];
+
 const userId = {
     name: null,
     identity: null,
@@ -106,10 +109,10 @@ function addPost() {
     userId.name = userName.value;
     if (userId.name === "Anônimo") {
         userId.identity = false;
-        userId.image = "./image/user1.png";
+        userId.image = "../assets/images/user1.png";
     } else {
         userId.identity = true;
-        userId.image = "./image/user1.png";
+        userId.image = "../assets/images/user1.png";
     }
     userId.message = userComment.value;
     userId.date = new Date().toLocaleString();
@@ -129,7 +132,18 @@ function addPost() {
     </div>`;
     comments.innerHTML += published;
     userComment.value = "";
+
+    commentsData.push({
+        name: userId.name,
+        identity: userId.identity,
+        image: userId.image,
+        message: userId.message,
+        date: userId.date,
+        rating: userId.rating
+    });
+    localStorage.setItem(commentKey, JSON.stringify(commentsData));
 }
+
 
 publishBtn.addEventListener("click", addPost);
 
@@ -142,14 +156,62 @@ function createStarsHTML(rating) {
     return starsHTML;
 }
 
+
+
 // Menu toggle
 const menuToggle = document.getElementById("menu-toggle");
 const menuLateral = document.querySelector(".menu-lateral");
 
 menuToggle.addEventListener("click", () => {
-    if (menuLateral.style.display === "block") {
+    if (menuLateral.style.display === "block" || menuLateral.style.display === "") {
         menuLateral.style.display = "none";
     } else {
         menuLateral.style.display = "block";
     }
 });
+
+//Thema
+function toggleMode() {
+    const html = document.documentElement;
+    const currentTheme = localStorage.getItem("theme");
+
+    if (currentTheme === "light") {
+        html.classList.remove("light");
+        localStorage.setItem("theme", "dark");
+    } else {
+        html.classList.add("light");
+        localStorage.setItem("theme", "light");
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const html = document.documentElement;
+    const theme = localStorage.getItem("theme");
+
+    if (theme === "light") {
+        html.classList.add("light");
+    } else {
+        html.classList.remove("light");
+    }
+
+    commentsData = JSON.parse(localStorage.getItem("commentKey")) || [];
+    renderComments();
+});
+function renderComments() {
+    comments.innerHTML = '';
+    commentsData.forEach(comment => {
+        let published = `
+        <div class="parents">
+            <img src="${comment.image}">
+            <div>
+                <h1>${comment.name}</h1>
+                <p>${comment.message}</p>
+                <div class="user-rating">
+                    ${createStarsHTML(comment.rating)}
+                </div>
+                <span class="date">${comment.date}</span>
+            </div>
+        </div>`;
+        comments.innerHTML += published;
+    });
+}

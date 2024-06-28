@@ -4,12 +4,26 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+:root {
+    --text-color: #C8C2C2;
+    --bg-color: #1E1D1C;
+    --switch-bg-url: url(./image/moon-stars.svg);
+}
+
+.light {
+    --text-color: black;
+    --bg-color: #F6F0E2;
+    --switch-bg-url: url(../image/sun.svg);
+}
+
 body {
     display: flex;
-    background-color: #F6F0E2;
+    background-color: var(--bg-color);
     min-height: 100vh;
 }
-/* Menu */ 
+
+/* Menu */
 nav h1 {
     color: white;
     font-size: xx-large;
@@ -19,18 +33,9 @@ nav.menu-lateral {
     width: 260px;
     height: 100%;
     background-color: #000000;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px;
     position: fixed;
     display: block;
-}
-nav.recolher {
-    width: 100%;
-    padding-left: 10px;
-}
-nav.recolher > i {
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
 }
 nav ul {
     list-style: none;
@@ -57,7 +62,7 @@ li.item-menu a {
 .cadastro {
     text-align: center;
     background-color: #DBB3CA;
-    margin: 200px 12px 0 12px;
+    margin: 100px 12px 0 12px;
     width: 220px;
     height: 157px;
     padding: auto;
@@ -78,7 +83,43 @@ li.item-menu a {
     align-items: center;
     margin-top: 25px;
 }
-/* Comentário*/
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto; 
+}
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+}
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+}
+#switch button:hover {
+    outline: 8px solid rgba(255, 255, 255, 0.2);
+}
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: grey;
+    border: 1px solid white;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+/* Comentário */
 footer {
     display: flex;
     flex-direction: column;
@@ -87,8 +128,9 @@ footer {
     margin: auto;
 }
 .comentario {
-    padding: 20px;
-    width: 500px;
+   padding: 20px;
+   width: 500px;
+   color: var(--text-color);
 }
 .comentario hr {
     width: 100%;
@@ -137,6 +179,7 @@ footer {
     color: #808080;
 }
 button#publish {
+    margin-top: 7px;
     display: flex;
     justify-content: space-around;
 }
@@ -177,48 +220,57 @@ button#publish {
     font-size: 0.8em;
     float: right;
 }
-.menu-toggle {
-    display: none;
-}
+
 /* Responsividade */
 @media(max-width: 800px) {
     body {
         flex-direction: column;
     }
-
     nav.menu-lateral {
-        display: flex;
-        width: 100%;
-        height: auto;
-        position: static;
         position: absolute;
-        z-index: 1;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
-
     .menu-toggle {
         display: block;
-        font-size: 2rem;
+        font-size: 30px;
         color: white;
         background-color: #000000;
-        border-radius: 25%;
+        border-radius: 50%;
         padding: 10px;
         margin: 15px;
         position: fixed;
         right: 1%;
+        bottom: 1%;
         cursor: pointer;
         z-index: 1001;
     }
-
-    .comentario {
-        width: 90%;
-    }
-
     .commentbox {
         flex-direction: column;
         align-items: center;
     }
-
     .commentbox > img {
         margin: 0 0 20px 0;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
