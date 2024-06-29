@@ -351,7 +351,7 @@
                     <iframe title="Protótipo interativo" src="https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false" width="600px" height="360px" allowtransparency="true" frameborder="0"></iframe>
                   </p>
                 </div>
-                <p><iframe title="Protótipo interativo" src="https://www.figma.com/proto/t9p30MERQti38F3cmLgmOZ/Trabalho-Interdiciplinar?node-id=30-802&t=txANOqhAUK9BXzLB-1" width="600px" height="360px" allowtransparency="true" frameborder="0"></iframe></p>
+                <p><object data="assets/files/FLUXO DO USUARIO.pdf" type="application/pdf" width="100%" height="500px"></object></p>
               </section>
 
               <section>
@@ -362,7 +362,7 @@
                 <div class="alert alert-warning collapse" role="alert" id="collapseWireframes">
                   <p>Os Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface. <img  class="img-fluid" src="assets/images/exemplo-wireframe.png" alt="Exemplo de wireframe"></p>
                 </div>
-                <p>......  COLOQUE AQUI OS PROTÓTIPO DE TELAS E SUA DESCRIÇÃO ...... </p>
+                <p><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2Ft9p30MERQti38F3cmLgmOZ%2FTrabalho-Interdiciplinar%3Fnode-id%3D0-1%26t%3DrJkhewWDAzmz4qft-1" allowfullscreen></iframe></p>
               </section>
 
             </section>
@@ -401,12 +401,12 @@
                     <tr>
                         <td>Processo de Design Thinking</td>
                         <td>Miro</td>
-                        <td><a href="https://miro.com/XXXXXXX">https://miro.com/XXXXXXX</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://miro.com/app/board/uXjVKdBQ6pI=/">https://miro.com/PPLCC-M-G8-terapeutasetraumas</a></td>
                     </tr>
                     <tr>
                         <td>Repositório de código</td>
                         <td>GitHub</td>
-                        <td><a href="https://github.com/XXXXXXX">https://github.com/XXXXXXX</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-1-terapeutas-e-traumas">https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-1-terapeutas-e-traumas</a></td>
                     </tr>
                     <tr>
                         <td>Hospedagem do site</td>
@@ -416,7 +416,7 @@
                     <tr>
                         <td>Protótipo Interativo</td>
                         <td>MavelApp ou Figma</td>
-                        <td><a href="https://figma.com/XXXXXXX">https://figma.com/XXXXXXX</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://www.figma.com/design/t9p30MERQti38F3cmLgmOZ/Trabalho-Interdiciplinar?node-id=0-1&t=rJkhewWDAzmz4qft-0">https://www.figma.com/design/t9p30MERQti38F3cmLgmOZ/Trabalho-Interdiciplinar?node-id=0-1&t=rJkhewWDAzmz4qft-0</a></td>
                     </tr>
                 </tbody>
               </table>
@@ -431,7 +431,7 @@
                 <p>Apresente a divisão de papéis e tarefas entre os membros do grupo. Informe quem é o Scrum Master, o Product Owner e os desenvolvedores. Informe também quem é o responsável pela documentação do projeto.</p>
                 <p>Apresente o quadro de gerenciamento do time (Kanban), seu formato e as experiências na utilização dessa ferramenta (GitHub Projects) </p>
               </div>
-              <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
+              <p><object data="assets/files/KANBAN.pdf" type="application/pdf" width="100%" height="500px"></object></p>
             </section>
 
 
@@ -510,33 +510,82 @@
               </div>
 
               <section>
-                <h5>Estrutura de Dados - Contatos<span class="exemplo">EXEMPLO</span></h5>
-                <p>Contatos da aplicação</p>
+                <h5>Estrutura de Dados - Cadastro Terapeutas</h5>
+                <p>Cadastros para os usuários entrarem como terapeutas.</p>  
                 <pre>
                   {
-                    "id": 1,
-                    "nome": "Leanne Graham",
-                    "cidade": "Belo Horizonte",
-                    "categoria": "amigos",
-                    "email": "Sincere@april.biz",
-                    "telefone": "1-770-736-8031",
-                    "website": "hildegard.org"
-                  }
+                    "id": "1",
+                    "idade": 30,
+                    "genero": "Feminino",
+                    "anos_de_experiencia": 5,
+                    "especialidade": "Psicologia Clínica",
+                    "crp": "12345",
+                    "contato": {
+                      "telefone": "(11) 98765-4321",
+                      "email": "terapeuta1@example.com"
+                    },
+                    "modalidade": [
+                      "online"
+                    ],
+                    "preco_da_hora": 100,
+                    "endereco": {
+                      "rua": "Rua A",
+                      "numero": 100,
+                      "complemento": "",
+                      "bairro": "Centro",
+                      "cidade": "São Paulo",
+                      "estado": "SP",
+                      "cep": "01000-000"
+                    },
+                    "planos_medicos": [
+                      "UNIMED",
+                      "SulAmerica"
+                    ]
+                  },
                 </pre>
               </section>
 
               <section>
-                <h5>Estrutura de Dados - Usuários<span class="exemplo">EXEMPLO</span></h5>
-                <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
+                <h5>Estrutura de Dados - Agenda</h5>
+                <p>O usuário pode visualizar quais dias ele marcou consulta com algum terapeuta</p>
                 <pre>
                   {
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    email: "admin@abc.com"
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    login: "admin"
-                    nome: "Administrador do Sistema"
-                    senha: "123"
-                  }
+                    "id": "1",
+                    "nome": "Fernando Farias",
+                    "especialidade": "Psicólogo de Casal",
+                    "image": "https://randomuser.me/api/portraits/men/45.jpg"
+                  },
+                </pre>
+              </section>
+              
+              <section>
+                <h5>Estrutura de Dados - Calendário</h5>
+                <p>O usuário pode visualizar quais terapeutas estão disponíveis para aquele dia.</p>
+                <pre>
+                  {
+                    "id": "1",
+                    "name": "Sofia Duarte",
+                    "specialty": "Terapia de Casal",
+                    "disponibilidade": [
+                      4,
+                      2,
+                      5
+                    ],
+                    "image": "https://randomuser.me/api/portraits/women/37.jpg"
+                  },
+                </pre>
+              </section>
+              
+              <section>
+                <h5>Estrutura de Dados - Perfil Favoritado</h5>
+                <p>O usuário pode visualizar quais perfis de terapeuta ele favoritou</p>
+                <pre>
+                  {
+                    "nome": "Dra. Ana Costa",
+                    "image": "images/Dra.Ana_Costa.jpg",
+                    "area": "Psiquiatria Infantil",
+                    "id": "bc77"
+                  },
                 </pre>
               </section>
             </section>
@@ -554,22 +603,22 @@
               <section>
                 <h5>Images:</h5>
                 <ul>
-                  <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Imagens pessoas - <a target="_blank" href="https://randomuser.me/api/portraits/men/45.jpg">https://randomuser.me/</a></li>
                 </ul>
               </section>
 
               <section>
                 <h5>Fonts:</h5>
                 <ul>
-                  <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Icons Font Face - <a target="_blank" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap">https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap</a></li>
                 </ul>
               </section>
 
               <section>
                 <h5>Scripts:</h5>
                 <ul>
-                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span class="exemplo">EXEMPLO</span></li>
-                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
                 </ul>
               </section>
             </section>
