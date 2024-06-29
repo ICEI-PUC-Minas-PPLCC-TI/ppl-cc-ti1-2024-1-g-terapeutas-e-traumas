@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recentes</title>
+    <link rel="stylesheet" href="../assets/css/recentes.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+</head>
+
+<body>
+    <nav class="Cardapio">
+        <div class="Aba_Menu">
+            <div class="Logo">
+                <h1>Health.me <img class="relogio" src="../assets/images/relogio.png" alt="" width="30px"></h1>
+            </div> <button class="hamburger"><img src="../assets/images/Hamburguer.png" alt="" width="30px"></button>
+            <ul class="topicos">
+                <li class="Menu"><a href="Menu.html"><img src="../assets/images/Menu.png" alt="" width="22px">Menu</a></li>
+                <li class="Favoritos"><a href="favoritos.html"><img src="../assets/images/favoritos_3.png" alt="" width="22px">Favoritos</a></li>
+                <li class="Agenda"><a href="agenda.html"> <img src="../assets/images/agenda .png" alt="" width="33px">Agenda</a></li>
+                <li class="Calendario"><a href="calendario.html"> <img src="../assets/images/Calendario_.png" alt="" width="30px">Calendário</a></li>
+                <li class="Meu_Perfil"> <a href="Comentarios.html"> <img src="../assets/images/perfil.png" alt="" width="40px">Perfil</a></li>
+                <li class="Recentes"> <a href="recentes.html"> <img src="../assets/images/relogio_2.png" alt="" width="22px">Recentes</a></li>
+                <li class="Log_out"><a href="Log_out.html"><img src="../assets/images/log out .png" alt="" width="22px">Log out</a></li>
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
+                <li class="Cad_Tera"><a href="cadastroTerapeuta.html"><img src="../assets/images/apostila.png" alt="" width="35px">Cadastre-se como
+                        Terapeuta</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <input type="text" id="search-bar" placeholder="Buscar perfis...">
+        <div id="profile-container" class="profile-container"></div>
+        <div class="Aba_recentes">
+            <div class="Ses_recentes">
+                <h2><img src="images/relogio.png" alt="" width="23px">Recentes</h2>
+                <p><strong>Lista de perfis recém-visualizados:</strong></p>
+                <div class="Caixa_Favoritados" id="favoritos-container"></div>
+            </div>
+        </div>
+        <div class="Favoritados-info">
+            <button class="excluir-perfil">Limpar histórico</button>
+        </div>
+        <script src="recentes.js"></script>
+    </main>
+    
+</body> 
+</html>

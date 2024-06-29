@@ -7,71 +7,8 @@
 body{
     height: 100vh;
 }
-nav.menu-lateal{
-    width: 60px;
-    height: 70%;
-    background-color:black;
-    border-radius: 20px;
-    padding: 40px 0 40px 1%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: .1s;
-    
-}
-nav.menu-lateal:hover{
-    width:250px ;
-}
-.btn-expandir{
-    width: 10%;
-    padding-left: 10px;
-}
-.btn-expandir > i{
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-ul li.item-menu{
-    transition: .1s;
-
-}
-ul li.ativo{
-    background-color: palevioletred;
-}
-ul li.item-menu:hover{
-    background-color:palevioletred ;
-    border-radius: 7px;
-
-}
-
-ul li.item-menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    height: 10px;
-    line-height: 20px;
-    align-items: center;
-
-}
-ul li.item-menu a .txt-link{
-    margin-left: 21px;
-    transition: .2s;
-    position: relative;
-    
-}
-nav.menu-lateal.expandir.txt-link{
-    margin-left: 40px;
-    opacity: 1;
-}
-
-ul li.item-menu a .icon >i{
-font-size: 20px;
-margin-left: 10px;
-align-items: center;
+.topicos li.Calendario a {
+    color: rgb(241, 181, 216);
 }
 
 .caixa-pesquisa{
