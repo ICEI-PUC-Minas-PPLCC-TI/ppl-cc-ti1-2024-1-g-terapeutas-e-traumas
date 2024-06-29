@@ -1,5 +1,9 @@
 {
-  "Cadastro Terapeuta": [
+  "usuarios": [
+    { "id": "01", "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "terapeuta1@example.com"},
+    { "id": "02", "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com"}
+],
+  "CadastroTerapeuta": [
     {
       "id": "1",
       "idade": 30,
