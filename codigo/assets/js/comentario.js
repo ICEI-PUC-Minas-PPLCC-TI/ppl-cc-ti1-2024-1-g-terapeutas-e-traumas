@@ -144,7 +144,6 @@ function addPost() {
     localStorage.setItem(commentKey, JSON.stringify(commentsData));
 }
 
-
 publishBtn.addEventListener("click", addPost);
 
 function createStarsHTML(rating) {
@@ -155,21 +154,6 @@ function createStarsHTML(rating) {
     }
     return starsHTML;
 }
-
-
-
-// Menu toggle
-const menuToggle = document.getElementById("menu-toggle");
-const menuLateral = document.querySelector(".menu-lateral");
-
-menuToggle.addEventListener("click", () => {
-    if (menuLateral.style.display === "block" || menuLateral.style.display === "") {
-        menuLateral.style.display = "none";
-    } else {
-        menuLateral.style.display = "block";
-    }
-});
-
 //Thema
 function toggleMode() {
     const html = document.documentElement;
