@@ -172,20 +172,11 @@ body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
 
 /*Tela Pequena*/
 @media screen and (max-width: 1020px) {
-  .menu-lateral {
-      width: 100%;
-      height: auto;
-      position: relative;
-      flex-direction: column;
-      padding: 20px 0px 0px 0px;
-      justify-content: center;
-  }
-
-  .menu-lateral ul {
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-  }
+ 
+ 
+  .topicos li.Recentes a {
+    color: rgb(241, 181, 216);
+}
 
   .caixa-pesquisa {
       position: relative;

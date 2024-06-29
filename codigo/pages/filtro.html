@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/filtro.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
     <title>Health.me</title>
 </head>
 <body> 
-    <header class="Menu_Lateral">
-        <section class="Nome_site">
-            <h1>Health.me</h1>
-        </section>
-        <ul class="Opções_Menu">
-            <h3>Geral</h3>
-            <ul class="Menu"><img src="../assets/images/IconeCasa.jpg" width="50px">Menu<a href="home"></a></ul>
-            <ul class="Ficha"><img src="../assets/images/IconeChecklist.jpg" width="50px">Ficha<a href="perfil"></a></ul>
-            <ul class="Favoritos"><img src="../assets/images/IconeEstrela.jpg" width="50px">Favoritos<a href="favoritados"></a></ul>
-            <ul class="Logout"><img src="../assets/images/IconeSaida.jpg" width="50px">Log Out<a href="sair_perfil"></a></ul>
-            <ul class="Cdt_Terap"><img src="../assets/images/IconeCadastro.jpg" width="50px"><strong>Cadastre-se como terapeuta</strong><a href="cadastro"></a></ul>
-        </ul>
-    </header>
+    <nav class="Cardapio">
+        <div class="Aba_Menu">
+            <div class="Logo">
+                <h1>Health.me <img class="relogio" src="../assets/images/relogio.png" alt="" width="30px"></h1>
+            </div> <button class="hamburger"><img src="../assets/images/Hamburguer.png" alt="" width="30px"></button>
+            <ul class="topicos">
+                <li class="Menu"><a href="Menu.html"><img src="../assets/images/Menu.png" alt="" width="22px">Menu</a></li>
+                <li class="Favoritos"><a href="favoritos.html"><img src="../assets/images/favoritos_3.png" alt="" width="22px">Favoritos</a></li>
+                <li class="Agenda"><a href="agenda.html"> <img src="../assets/images/agenda .png" alt="" width="33px">Agenda</a></li>
+                <li class="Calendario"><a href="calendario.html"> <img src="../assets/images/Calendario_.png" alt="" width="30px">Calendário</a></li>
+                <li class="Meu_Perfil"> <a href="Comentarios.html"> <img src="../assets/images/perfil.png" alt="" width="40px">Perfil</a></li>
+                <li class="Recentes"> <a href="recentes.html"> <img src="../assets/images/relogio_2.png" alt="" width="22px">Recentes</a></li>
+                <li class="Log_out"><a href="Log_out.html"><img src="../assets/images/log out .png" alt="" width="22px">Log out</a></li>
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
+                <li class="Cad_Tera"><a href="cadastroTerapeuta.html"><img src="../assets/images/apostila.png" alt="" width="35px">Cadastre-se como
+                        Terapeuta</a></li>
+                
+            </ul>
+        </div>
+    </nav>
 
     <div class="caixa-pesquisa">
       <input type="text" placeholder="  Digite aqui...">

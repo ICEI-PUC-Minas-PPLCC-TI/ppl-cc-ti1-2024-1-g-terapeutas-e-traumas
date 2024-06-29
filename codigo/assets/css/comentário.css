@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -22,67 +22,7 @@ body {
     background-color: var(--bg-color);
     min-height: 100vh;
 }
-
 /* Menu */
-nav h1 {
-    color: white;
-    font-size: xx-large;
-    padding: 20px 5%;
-}
-nav.menu-lateral {
-    width: 260px;
-    height: 100%;
-    background-color: #000000;
-    padding: 40px 0px;
-    position: fixed;
-    display: block;
-}
-nav ul {
-    list-style: none;
-}
-li.item-menu a:hover {
-    background: rgba(63, 62, 62, 0.5);
-    color: #F1B5D8;
-}
-li.item-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px 5%;
-    width: 250px;
-    border-radius: 9999px;
-    margin: 30px 0;
-    display: flex;
-    transition: 1s;
-}
-#Perfil a {
-    color: #F1B5D8;
-    background: rgba(63, 62, 62, 0.5);
-}
-.cadastro {
-    text-align: center;
-    background-color: #DBB3CA;
-    margin: 100px 12px 0 12px;
-    width: 220px;
-    height: 157px;
-    padding: auto;
-    border-radius: 20px;
-}
-.cadastro a {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #000000;
-}
-.cadastro p {
-    font-size: 20px;
-    width: 170px;
-    height: 101px;
-    margin: auto;
-    align-items: center;
-    margin-top: 25px;
-}
 #switch {
     position: relative;
     width: 64px;
@@ -220,34 +160,15 @@ button#publish {
     font-size: 0.8em;
     float: right;
 }
+.topicos li.Meu_Perfil a {
+    color: rgb(241, 181, 216);
+}
+
 
 /* Responsividade */
 @media(max-width: 800px) {
     body {
         flex-direction: column;
-    }
-    nav.menu-lateral {
-        position: absolute;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-    .menu-toggle {
-        display: block;
-        font-size: 30px;
-        color: white;
-        background-color: #000000;
-        border-radius: 50%;
-        padding: 10px;
-        margin: 15px;
-        position: fixed;
-        right: 1%;
-        bottom: 1%;
-        cursor: pointer;
-        z-index: 1001;
     }
     .commentbox {
         flex-direction: column;
