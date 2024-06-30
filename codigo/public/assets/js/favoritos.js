@@ -45,7 +45,7 @@ function mostrarMensagemSemFav() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('/Pef_favoritos') // Faz uma requisição para o JSON Server
+  fetch('/http://localhost:3000/Pef_favoritos') // Faz uma requisição para o JSON Server
    .then(response => response.json()) // Converte a resposta para JSON
    .then(data => {
       const favoritosContainer = document.getElementById('favoritos-container');
