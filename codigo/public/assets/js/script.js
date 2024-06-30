@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const dataSelecionada = new Date(ano, mes, dia);
         const diaDaSemana = dataSelecionada.getDay() + 1; // 1=Domingo, 2=Segunda, etc.
 
-        fetch('http://localhost:3000/terapeutas') 
+        fetch('http://localhost:3000/Calendario') 
             .then(response => response.json())
             .then(data => {
                 console.log(data);
