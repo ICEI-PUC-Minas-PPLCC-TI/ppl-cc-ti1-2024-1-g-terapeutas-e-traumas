@@ -6,80 +6,43 @@
     <title>Health-me</title>
     <link rel="stylesheet" href="../assets/css/cadastroTerapeuta.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
 </head>
 <body>
-    <div class="media">
-    
-        <nav class="menu-lateal">
-        <div class="btn-expandir">
-            <i class="bi bi-list"></i>
+    <nav class="Cardapio">
+        <div class="Aba_Menu">
+            <div class="Logo">
+                <h1>Health.me <img class="relogio" src="../assets/images/relogio.png" alt="" width="30px"></h1>
+            </div> <button class="hamburger"><img src="../assets/images/Hamburguer.png" alt="" width="30px"></button>
+            <ul class="topicos">
+                <li class="Menu"><a href="Menu.html"><img src="../assets/images/Menu.png" alt="" width="30px">Menu</a></li>
+                <li class="Favoritos"><a href="favoritos.html"><img src="../assets/images/favoritos_3.png" alt="" width="30px">Favoritos</a></li>
+                <li class="Agenda"><a href="agenda.html"> <img src="../assets/images/agenda .png" alt="" width="41px">Agenda</a></li>
+                <li class="Calendario"><a href="calendario.html"> <img src="../assets/images/Calendario_.png" alt="" width="38px">Calendário</a></li>
+                <li class="Meu_Perfil"> <a href="Comentarios.html"> <img src="../assets/images/perfil.png" alt="" width="48px">Perfil</a></li>
+                <li class="Recentes"> <a href="recentes.html"> <img src="../assets/images/relogio_2.png" alt="" width="30px">Recentes</a></li>
+                <li class="Log_out"><a href="Log_out.html"><img src="../assets/images/log out .png" alt="" width="30px">Log out</a></li>
+                <div id="switch" onclick="toggleMode()">
+                    <button></button>
+                    <span></span>
+                </div>
+                <li class="Cad_Tera"><a href="cadastroTerapeuta.html"><img src="../assets/images/apostila.png" alt="" width="35px">Cadastre-se como
+                        Terapeuta</a></li>
+                
+            </ul>
         </div>
-       
-        <ul>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-house"></i></span>
-                    <span class="txt-link">Menu</span>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-bookmark"></i></span>
-                    <span class="txt-link">Favoritos</span>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-star"></i></span>
-                    <span class="txt-link">Avaliação</span>
-                </a>
-            </li>
-        </ul>
-       
-        <ul>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-alarm"></i></span>
-                    <span class="txt-link">Recentes</span>
-                </a>
-            </li>
-        </ul>
-        
-        <ul>
-            <li class="item-menu ativo" onclick="toggle('cadastro')">
-                <a href="#">
-                    <script src="../assets/js/cadastroTerapeuta.js"></script>
-                    <span class="icon"><i class="bi bi-journal"></i> </span>
-                    <span class="txt-link">Cadastre-se como terapeuta</span>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
-                    <span class="txt-link">Logout</span>
-                </a>
-            </li>
-        </ul>
     </nav>
-    <script src="cadastroTerapeuta.js"></script>
-    <div class="caixa-pesquisa">
-        <input type="text" placeholder="  Digite aqui...">
-        <a href="#">
-        <span class="icon-pesquisa"><i class="bi bi-search"></i></span>
-        </a>
-    </div>
     <div class="perfil">
         <a class="item-perfil" href="#">
             <span class="icon-perfil"><i class="bi bi-person-circle"></i> </span>
             <span class="txt-perfil">Carolina Duarte</span>
         </a>
     </div>
+
+
+    <script src="cadastroTerapeuta.js"></script>
+ 
+
 
     <div id="cadastro" class="cadastro">
         <h1>Cadastro do Terapeuta</h1>

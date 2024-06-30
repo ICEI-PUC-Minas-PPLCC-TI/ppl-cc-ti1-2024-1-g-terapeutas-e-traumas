@@ -104,6 +104,21 @@
         padding-right: 8px;
     }
 
+    body,
+    html {
+        background-color:  rgb(246, 240, 226);/* Alterado para a cor desejada */
+        margin: 0;
+        padding: 0;
+    }
+
+    .cadastro {
+        margin-left: 40%; /* Ajuste para mover o formulário mais para a direita */
+        background: none; /* Remover fundo branco */
+    }
+
+    .cadastro form {
+        background:rgb(241, 181, 216); /* Remover fundo branco */
+    }
 
     .topicos li.Cad_Tera a {
         width: 80%;
@@ -115,7 +130,7 @@
         padding-bottom: 30px;
         margin-left: 15px;
         margin-top: 30%;
-        background-color: rgb(241, 181, 216);
+        background-color: rgb(241, 181, 216); 
         border-radius: 10px;
         color: black;
        transition: background-color 1s , padding 0,5s color 1s;
