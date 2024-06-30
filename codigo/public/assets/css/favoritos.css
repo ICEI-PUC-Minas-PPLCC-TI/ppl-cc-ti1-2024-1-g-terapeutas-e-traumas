@@ -1,4 +1,3 @@
-
 /* Celular */
 @media only screen and (max-width: 480px) {
 
@@ -337,7 +336,7 @@
 
     Copy code body,
     html {
-        background-color: var(--bg-color);
+        background-color: rgb(246, 240, 226);
         margin: 0;
         padding: 0;
     }

@@ -1,15 +1,4 @@
 /* Celular */
-:root {
-    --text-color: #C8C2C2;
-    --bg-color: #1E1D1C;
-    --switch-bg-url: url(../images/moon-stars.svg);
-}
-
-.light {
-    --text-color: black;
-    --bg-color: #F6F0E2;
-    --switch-bg-url: url(../images/sun.svg);
-}
 @media only screen and (max-width: 480px) {
 
     body,
