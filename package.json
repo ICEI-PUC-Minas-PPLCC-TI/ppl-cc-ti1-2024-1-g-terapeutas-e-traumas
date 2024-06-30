@@ -1,4 +1,13 @@
 {
+  "name": "sprint3",
+  "version": "1.0.0",
+  "main": "java.js",
+  "scripts":    {
+   "start": "json-server --watch ./codigo/db/db.json --port 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "json-server": "^1.0.0-beta.1"
   }
