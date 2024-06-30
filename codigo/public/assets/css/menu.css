@@ -5,7 +5,7 @@
 
     Copy code body,
     html {
-        background-color: rgb(246, 240, 226);
+        background-color: var(--bg-color);
         margin: 0;
         padding: 0;
     }
@@ -308,6 +308,7 @@
         margin-bottom: 40px;
     }
 }
+
 
 /* Celular */
 @media only screen and (max-width: 480px) {

@@ -1,3 +1,14 @@
+:root {
+  --text-color: #C8C2C2;
+  --bg-color: #1E1D1C;
+  --switch-bg-url: url(../images/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-color: #F6F0E2;
+  --switch-bg-url: url(../images/sun.svg);
+}
 /* Ajuste do menu esquerdo */
 
 body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }

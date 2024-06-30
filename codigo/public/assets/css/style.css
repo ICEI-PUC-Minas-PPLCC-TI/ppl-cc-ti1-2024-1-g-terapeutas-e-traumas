@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+:root {
+  --text-color: #C8C2C2;
+  --bg-color: #1E1D1C;
+  --switch-bg-url: url(../images/moon-stars.svg);
+}
 
+.light {
+  --text-color: black;
+  --bg-color: #F6F0E2;
+  --switch-bg-url: url(../images/sun.svg);
+}
 
 :root {
   --Moderate-blue: hsl(13, 40%, 52%);/* Editar a cor da menção do comentario */
