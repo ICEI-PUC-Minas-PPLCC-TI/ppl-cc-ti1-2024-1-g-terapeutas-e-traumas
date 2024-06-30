@@ -10,7 +10,17 @@ body{
 .topicos li.Calendario a {
     color: rgb(241, 181, 216);
 }
+:root {
+    --text-color: #C8C2C2;
+    --bg-color: #1E1D1C;
+    --switch-bg-url: url(../images/moon-stars.svg);
+}
 
+.light {
+    --text-color: black;
+    --bg-color: #F6F0E2;
+    --switch-bg-url: url(../images/sun.svg);
+}
 .caixa-pesquisa{
     border-radius: 100px;
     margin-left: 350px;
@@ -27,6 +37,12 @@ body{
  
  
 }
+.icon-perfil i {
+    color: var(--text-color);
+}
+.txt-perfil{
+    color: var(--text-color);
+}
 .icon-pesquisa{
     position: absolute;
     margin-left: 555px ;
@@ -40,7 +56,6 @@ body{
 a{
     text-decoration: none;
 }
-
 .item-perfil{
     
     margin-left: 1090px;

@@ -7,6 +7,7 @@
 	<title>Login</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
+     <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 
 <body>
@@ -97,7 +98,11 @@
                 // Valida login e se estiver ok, redireciona para tela inicial da aplicação
                 resultadoLogin = loginUser (username, password);
                 if (resultadoLogin) {
+<<<<<<< HEAD
                     window.location.href = '/codigo/index.html';
+=======
+                    window.location.href = 'menu.html';
+>>>>>>> 8c46200747361fc0fb7d62fb3b0ecb93476f0522
                 }
                 else { // Se login falhou, avisa ao usuário
                     alert ('Usuário ou senha incorretos');

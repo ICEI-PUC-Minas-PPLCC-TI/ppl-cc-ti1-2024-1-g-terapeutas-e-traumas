@@ -1,5 +1,5 @@
 // Página inicial de Login
-const LOGIN_URL = "./pages/login.html";
+const LOGIN_URL = "./public/pages/login.html";
 
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};

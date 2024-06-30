@@ -2,14 +2,14 @@
 /* PC */
 @media only screen and (min-width: 1101px) 
 {
-
-    Copy code body,
+    body {
+        background-color: var(--bg-color)!important;
+    }
     html {
-        background-color: rgb(246, 240, 226);
+        background-color: var(--bg-color) !important; 
         margin: 0;
         padding: 0;
     }
-
     .hamburger
     {
         display: none;
@@ -308,6 +308,7 @@
         margin-bottom: 40px;
     }
 }
+
 
 /* Celular */
 @media only screen and (max-width: 480px) {
