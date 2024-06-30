@@ -1,3 +1,4 @@
+//Thema
 function toggleMode() {
     const html = document.documentElement;
     const currentTheme = localStorage.getItem("theme");
@@ -20,4 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         html.classList.remove("light");
     }
+
 });
