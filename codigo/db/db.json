@@ -686,7 +686,7 @@
       "image": "../assets/images/Dr.Luis_Dias.jpg",
       "area": "Psiquiatria Forense",
       "id": "ae4f",
-      "favoritado": true
+      "favoritado": false
     },
     {
       "nome": "Dra. Rosa Lima",
@@ -714,7 +714,7 @@
       "image": "../assets/images/Dra.Ana_Prado.jpg",
       "area": "Psiquiatria Cultural",
       "id": "03f2",
-      "favoritado": true
+      "favoritado": false
     },
     {
       "nome": "Dra.Bianca Pires",
