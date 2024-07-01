@@ -669,51 +669,59 @@
   "Pef_favoritos": [
     {
       "nome": "Dra. Ana Costa",
-      "image": "images/Dra.Ana_Costa.jpg",
+      "image": "../assets/images/Dra.Ana_Costa.jpg",
       "area": "Psiquiatria Infantil",
-      "id": "bc77"
+      "id": "bc77",
+      "favoritado": false
     },
     {
       "nome": "Dr. Joao_Silva",
-      "image": "images/Dr.Joao_Silva.jpg",
+      "image": "../assets/images/Dr.Joao_Silva.jpg",
       "area": "Psiquiatria Geriatrica",
-      "id": "9bc7"
+      "id": "9bc7",
+      "favoritado": false
     },
     {
       "nome": "Dr. Luis Dias",
-      "image": "images/Dr.Luis_Dias.jpg",
+      "image": "../assets/images/Dr.Luis_Dias.jpg",
       "area": "Psiquiatria Forense",
-      "id": "ae4f"
+      "id": "ae4f",
+      "favoritado": false
     },
     {
       "nome": "Dra. Rosa Lima",
-      "image": "images/Dra.Rosa_Lima.jpg",
+      "image": "../assets/images/Dra.Rosa_Lima.jpg",
       "area": "Psiquiatria de Adições",
-      "id": "4d16"
+      "id": "4d16",
+      "favoritado": false
     },
     {
       "nome": "Dr. Felipe Souza",
-      "image": "images/Dr.Felipe_Souza.jpg",
+      "image": "../assets/images/Dr.Felipe_Souza.jpg",
       "area": "Psiquiatria Biológica",
-      "id": "c62a"
+      "id": "c62a",
+      "favoritado": true
     },
     {
       "nome": "Dr. José Pinto",
-      "image": "images/Dr.Jose_Pinto.jpg",
+      "image": "../assets/images/Dr.Jose_Pinto.jpg",
       "area": "Psiquiatria de Adultos",
-      "id": "fd05"
+      "id": "fd05",
+      "favoritado": false
     },
     {
       "nome": "Dra. Ana Prado",
-      "image": "images/Dra.Ana_Prado.jpg",
+      "image": "../assets/images/Dra.Ana_Prado.jpg",
       "area": "Psiquiatria Cultural",
-      "id": "03f2"
+      "id": "03f2",
+      "favoritado": false
     },
     {
       "nome": "Dra.Bianca Pires",
-      "image": "images/Dra.Bianca_Pires.jpg",
+      "image": "../assets/images/Dra.Bianca_Pires.jpg",
       "area": "Neuropsiquiatria",
-      "id": "acc9"
+      "id": "acc9",
+      "favoritado": false
     }
   ]
 }

@@ -45,7 +45,7 @@ function mostrarMensagemSemFav() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('/http://localhost:3000/Pef_favoritos') // Faz uma requisição para o JSON Server
+  fetch('http://localhost:3000/Pef_favoritos') // Faz uma requisição para o JSON Server
    .then(response => response.json()) // Converte a resposta para JSON
    .then(data => {
       const favoritosContainer = document.getElementById('favoritos-container');
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Itera sobre cada item da lista de favoritos
       data.forEach(favorito => {
-    
+        if(!favorito.favoritado){return}
         const divFavorito = document.createElement('div');
         divFavorito.classList.add('Favoritados');
 
@@ -79,19 +79,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const favBotton = document.createElement('botton');
         favBotton.classList.add('excluir-perfil');
-        favBotton.textContent = 'Desfavoritar';
-        favBotton.addEventListener('click', function (e) {
-        
-          const profile = e.target.closest('.Favoritados');
-
-          if (profile) {
-            profile.remove();
-            const remainingProfiles = document.querySelectorAll('.Favoritados');
-            if (remainingProfiles.length === 0) {
-              mostrarMensagemSemFav();
+        favButton.addEventListener('click', function (e) {
+          const newStatus = !favorito.favoritado; // Inverte o status atual
+          fetch(`http://localhost:3000/Pef_favoritos/${favorito.id}`, {
+            method: 'PATCH',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ favoritado: newStatus })
+          })
+          .then(response => response.json())
+          .then(updatedFavorito => {
+            favorito.favoritado = newStatus; // Atualiza o status localmente
+            if (newStatus) {
+              favButton.textContent = 'Desfavoritar';
+            } else {
+              favButton.textContent = 'Favoritar';
             }
-          }
+          })
+          .catch(error => console.error('Erro ao atualizar favorito:', error));
         });
+
+        // favBotton.textContent = 'Desfavoritar';
+        // favBotton.addEventListener('click', function (e) {
+        
+        //   const profile = e.target.closest('.Favoritados');
+
+        //   if (profile) {
+        //     profile.remove();
+        //     const remainingProfiles = document.querySelectorAll('.Favoritados');
+        //     if (remainingProfiles.length === 0) {
+        //       mostrarMensagemSemFav();
+        //     }
+        //   }
+        //});
 
         linkPerfil.appendChild(spanNome);
         divInfo.appendChild(linkPerfil);

@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const input = document.querySelector(".caixa-pesquisa input")
+    // const input = document.querySelector(".caixa-pesquisa input")
     
-    input.addEventListener("input", (event) => {
-        const consultasFiltradas = todasAsConsultas.filter(consulta => consulta.nome.toLowerCase().startsWith(event.target.value))
-        carregarConsultas(consultasFiltradas)
-    })
+    // input.addEventListener("input", (event) => {
+    //     const consultasFiltradas = todasAsConsultas.filter(consulta => consulta.nome.toLowerCase().startsWith(event.target.value))
+    //     carregarConsultas(consultasFiltradas)
+    // })
 
     function desmarcarConsulta(botaoId) {
         const url = `http://localhost:3000/agenda/${botaoId}`
@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Adiciona event listener ao item do menu lateral para alternar a agenda
-    var agendaMenu = document.querySelector('.item-menu.ativo');
-    agendaMenu.addEventListener('click', function() {
-        toggle('agenda');
-    });
+    // var agendaMenu = document.querySelector('.item-menu.ativo');
+    // agendaMenu.addEventListener('click', function() {
+    //     toggle('agenda');
+    // });
 
     // Função para ajustar o tamanho do bloco rosa com efeito de transição
     function ajustarTamanhoBlocoRosa() {
@@ -220,13 +220,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Adiciona event listeners para expandir/recolher o menu lateral (NOVO)
-    const btnExpandir = document.querySelector('.btn-expandir');
-    btnExpandir.addEventListener('click', expandirMenuLateral);
-    document.addEventListener('click', (event) => {
-        if (!event.target.closest('.menu-lateal')) {
-            recolherMenuLateral();
-        }
-    });
+    // const btnExpandir = document.querySelector('.btn-expandir');
+    // btnExpandir.addEventListener('click', expandirMenuLateral);
+    // document.addEventListener('click', (event) => {
+    //     if (!event.target.closest('.menu-lateal')) {
+    //         recolherMenuLateral();
+    //     }
+    // });
 
     carregarConsultasJSON()
 });

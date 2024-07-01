@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mostrarMensagemSemFav();
     });
 
-    fetch('/http://localhost:3000/Pef_favoritos')
+    fetch('http://localhost:3000/Pef_favoritos')
         .then(response => response.json())
         .then(data => {
             const favoritosContainer = document.getElementById('favoritos-container');

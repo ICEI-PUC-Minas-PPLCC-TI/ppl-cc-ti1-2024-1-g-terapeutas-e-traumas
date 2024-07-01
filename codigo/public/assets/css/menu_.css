@@ -10,6 +10,7 @@
     --bg-color: #F6F0E2;
     --switch-bg-url: url(../images/sun.svg);
 }
+
 /* Celular */
 @media only screen and (max-width: 480px) {
 
@@ -78,7 +79,7 @@
         border-radius: 10px;
     }
 
-    .topicos li.recentes a {
+    .topicos li.Favoritos a {
         color: rgb(179, 122, 155);
     }
 
@@ -88,6 +89,8 @@
 
     .topicos.active li {
         display: flex;
+
+
     }
 
     .topicos.active li a {
@@ -100,7 +103,7 @@
         margin-bottom: 40px;
     }
 
-    .Aba_recentes {
+    .Aba_Favoritos {
         background-color: rgb(241, 181, 216);
         padding: 5px;
         padding-bottom: 20px;
@@ -109,7 +112,7 @@
         text-align: center;
     }
 
-    .Ses_recentes {
+    .Ses_Favoritados {
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -174,48 +177,6 @@
         color: black;
         text-align: center;
     }
-    #search-bar {
-        width: 50%;
-        padding: 10px;
-        margin: 20px auto;
-        background: rgba(241, 181, 216, 0.555) ;
-        border: 1px solid rgb(241, 181, 216);
-        border-radius: 5px;
-        font-size: 16px;
-        justify-content: center;
-        margin-left: 80px;
-    }
-    #profile-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-        gap: 10px;
-    }
-    
-    .profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(241, 181, 216, 0.555) ;
-        padding: 5px;
-        border-radius: 10px;
-    }
-    
-    .profile img {
-        border: 2px solid #ffd8df;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .profile .name {
-        font-size: medium;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-    }
-    
 }
 
 /* Tablet */
@@ -285,7 +246,7 @@
         border-radius: 10px;
     }
 
-    .topicos li.recentes a {
+    .topicos li.Favoritos a {
         color: rgb(179, 122, 155);
     }
 
@@ -307,7 +268,7 @@
         margin-bottom: 40px;
     }
 
-    .Aba_recentes {
+    .Aba_Favoritos {
         background-color: rgb(241, 181, 216);
         padding: 5px;
         padding-bottom: 20px;
@@ -316,13 +277,13 @@
         text-align: center;
     }
 
-    .Ses_recentes {
+    .Ses_Favoritados {
         font-family: Arial, Helvetica, sans-serif;
     }
 
     .Caixa_Favoritados {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
@@ -381,62 +342,255 @@
         color: black;
         text-align: center;
     }
-
-    #search-bar {
-        width: 50%;
-        padding: 10px;
-        margin: 20px auto;
-        background: rgba(241, 181, 216, 0.555) ;
-        border: 1px solid rgb(241, 181, 216);
-        border-radius: 5px;
-        font-size: 16px;
-        justify-content: center;
-        margin-left: 190px;
-    }
-    #profile-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-        gap: 10px;
-    }
-    
-    .profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: rgba(241, 181, 216, 0.555) ;
-        padding: 5px;
-        border-radius: 10px;
-    }
-    
-    .profile img {
-        border: 2px solid #ffd8df;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-    }
-    
-    .profile .name {
-        font-size: medium;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-    }
 }
 
 /* PC */
 @media only screen and (min-width: 1101px) {
 
-    html 
-    {
+    Copy code body,
+    html {
         background-color: var(--bg-color);
         margin: 0;
         padding: 0;
     }
 
-    .topicos li.Menu a {
+    .topicos li.Favoritos a {
         color: rgb(241, 181, 216);
+    }
+
+    .Aba_Menu {
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    .Logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .Logo h1 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+
+    .relogio {
+        margin-top: 15px;
+        margin-left: 13.5%;
+    }
+
+    .topicos {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .topicos li {
+        margin-bottom: 10px;
+    }
+
+    .topicos li a {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 25px;
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        transition: background-color 1s , padding 0.5s , color 1s;
+    }
+
+    .topicos h2 {
+        color: white;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+    }
+
+    .topicos li.Menu a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Ficha a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Favoritos a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+    .topicos li.recentes a img 
+    {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+    .topicos li.Favoritos a {
+        color: rgb(241, 181, 216);
+    }
+
+    .topicos li.Log_out a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+
+    .topicos li.Agenda a img {
+        margin-left: -25px; 
+        padding-right: 8px; 
+    }
+    .topicos li.Calendario a img {
+        margin-left: -25px;
+        padding-right: 8px;
+    }
+    .topicos li.Meu_Perfil a img {
+        margin-left: -30px;
+        padding-right: 8px;
+    }
+    .topicos li.Recentes a img {
+        margin-left: -20px;
+        padding-right: 8px;
+    }
+
+
+    .topicos li.Cad_Tera a {
+        width: 80%;
+        font-size: medium;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 15px;
+        margin-top: 30%;
+        background-color: rgb(241, 181, 216);
+        border-radius: 10px;
+        color: black;
+       transition: background-color 1s , padding 0,5s color 1s;
+    }
+
+    .topicos li.Cad_Tera a img {
+        display: block;
+        margin-left: 38%;
+        padding: 2px;
+        border-radius: 6px;
+    }
+
+    .topicos li.Cad_Tera a:hover {
+        background-color: #3d3d3d;
+        color: rgb(241, 181, 216);
+    }
+
+    .topicos li a:hover {
+        background-color: #222222;
+        border-radius: 5px;
+        color: rgb(241, 181, 216);
+    }
+
+    .Aba_Favoritos {
+        max-width: 800px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 5%;
+        display: flex;
+    }
+
+    .Ses_Favoritados {
+        background-color: rgb(241, 181, 216);
+        border-radius: 20px;
+        padding-left: 8px;
+        padding: 20px;
+        max-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .Caixa_Favoritados {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .Favoritados {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Favoritados img.Imagem_perfil {
+        width: 120px;
+        height: 120px;
+        border: 2px solid #ffd8df;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+
+    }
+
+    .Favoritados-info {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .Perfil {
+        font-size: medium;
+        color: black;
+        text-decoration: none;
+        list-style-type: none;
+        transition: background-color 1s , padding 0.5s , color 1s;
+       
+    }
+
+    .Perfil:hover {
+        background-color: rgb(179, 122, 155);
+        padding: 4px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    .Especializacao 
+    {
+        margin-left: 0 auto;
+        color: rgb(155, 62, 142);
+        font-size: small;
+
+
+    }
+
+    .excluir-perfil 
+    {
+        background-color: rgb(179, 122, 155);
+        color: black;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 1s , padding 0.5s , color 1s;
+    }
+
+    .excluir-perfil:hover
+    {
+        background-color: rgb(155, 62, 142);
+        color: white;
+    }
+
+    .Sem_Favoritos 
+    {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: center;
     }
 
     .hamburger 
@@ -444,55 +598,68 @@
         display: none;
     }
 
-    #search-bar {
-        width: 50%;
-        padding: 10px;
-        margin: 20px;
-        background: rgb(241, 181, 216) ;
-        margin-left: 400px;
-        border: 1px solid rgb(179, 122, 155);
-        border-radius: 5px;
-        font-size: 16px;
-        justify-content: center;
-    }
-    #profile-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-        margin-left: 170px;
-        gap: 20px;
-        grid-template-columns: repeat(4, 1fr);
+    :root {
+        --text-color: #C8C2C2;
+        --bg-color: #1E1D1C;
+        --switch-bg-url: url(../images/moon-stars.svg);
     }
     
-    .profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        background: rgba(241, 181, 216, 0.555) ;
-        padding: 5px;
-        border-radius: 10px;
+    .light {
+        --text-color: black;
+        --bg-color: #F6F0E2;
+        --switch-bg-url: url(../images/sun.svg);
     }
-    
-    .profile img {
-        border: 2px solid #ffd8df;
+
+    #switch {
+        position: relative;
+        width: 64px;
+        margin: 4px auto; 
+    }
+    #switch button {
+        width: 32px;
+        height: 32px;
+        background: white var(--switch-bg-url) no-repeat center;
+        border: 0;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+        animation: slide-back 0.2s;
     }
-    
-    .profile .name {
-        font-size: medium;
-        color: black;
+    .light #switch button {
+        animation: slide-in 0.2s forwards;
     }
-    
-    .profile .area {
-        color: rgb(155, 62, 142);
-        font-size: small;
+    #switch button:hover {
+        outline: 8px solid rgba(255, 255, 255, 0.2);
     }
-    div.logo {
-       margin: 10% 47% 0;
+    #switch span {
+        display: block;
+        width: 64px;
+        height: 24px;
+        background: grey;
+        border: 1px solid white;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 9999px;
+    }
+
+    @keyframes slide-in {
+        from {
+            left: 0;
+        }
+        to {
+            left: 50%;
+        }
+    }
+    @keyframes slide-back {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 0;
+        }
     }
 }
-

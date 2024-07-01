@@ -40,7 +40,7 @@ function initLoginApp () {
     // PARTE 1 - INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
     usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
     if (usuarioCorrenteJSON) {
-        usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
+        usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
     }
     
     // PARTE 2 - INICIALIZA BANCO DE DADOS DE USUÁRIOS
