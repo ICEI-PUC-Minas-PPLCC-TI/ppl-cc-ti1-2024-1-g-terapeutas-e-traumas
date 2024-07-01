@@ -573,19 +573,19 @@
       "id": "1",
       "nome": "Fernando Farias",
       "especialidade": "Psicólogo de Casal",
-      "image": "https://randomuser.me/api/portraits/men/45.jpg"
+      "image": "../assets/images/Dr.Luis_Dias.jpg"
     },
     {
       "id": "2",
       "nome": "Giulia Ricci",
       "especialidade": "Psicóloga Social",
-      "image": "https://randomuser.me/api/portraits/women/37.jpg"
+      "image": "../assets/images/Dra.Ana_Prado.jpg"
     },
     {
       "id": "3",
       "nome": "Wiliiam Mattos",
       "especialidade": "Psicologia Escolar e Educacional",
-      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+      "image": "../assets/images/Dr.Felipe_Souza.jpg"
     }
   ],
   "Calendario": [
