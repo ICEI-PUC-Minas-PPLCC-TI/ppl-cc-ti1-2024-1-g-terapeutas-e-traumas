@@ -574,12 +574,6 @@
       "nome": "Giulia Ricci",
       "especialidade": "Psicóloga Social",
       "image": "../assets/images/Dra.Ana_Prado.jpg"
-    },
-    {
-      "id": "3",
-      "nome": "Wiliiam Mattos",
-      "especialidade": "Psicologia Escolar e Educacional",
-      "image": "../assets/images/Dr.Felipe_Souza.jpg"
     }
   ],
   "Calendario": [
@@ -673,7 +667,7 @@
       "image": "../assets/images/Dr.Joao_Silva.jpg",
       "area": "Psiquiatria Geriatrica",
       "id": "9bc7",
-      "favoritado": true
+      "favoritado": false
     },
     {
       "nome": "Dr. Luis Dias",
