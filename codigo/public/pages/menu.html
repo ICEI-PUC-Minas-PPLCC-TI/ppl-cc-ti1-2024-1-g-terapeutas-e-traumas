@@ -1,51 +1,107 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-   
-    <link rel="stylesheet" href="../assets/css/menu.css">
-    <link rel="stylesheet" href="../assets/css/menu_.css">
-</head>
-<body>
-    <nav class="Cardapio">
-        <div class="Aba_Menu">
-            <div class="Logo">
-                <h1>Health.me <img class="relogio" src="../assets/images/relogio.png" alt="" width="30px"></h1>
-            </div> <button class="hamburger"><img src="../assets/images/Hamburguer.png" alt="" width="30px"></button>
-            <ul class="topicos">
-                <li class="Menu"><a href="Menu.html"><img src="../assets/images/Menu.png" alt="" width="22px">Menu</a></li>
-                <li class="Favoritos"><a href="favoritos.html"><img src="../assets/images/favoritos_3.png" alt="" width="22px">Favoritos</a></li>
-                <li class="Agenda"><a href="agenda.html"> <img src="../assets/images/agenda .png" alt="" width="33px">Agenda</a></li>
-                <li class="Calendario"><a href="calendario.html"> <img src="../assets/images/Calendario_.png" alt="" width="30px">Calendário</a></li>
-                <li class="Recentes"> <a href="recentes.html"> <img src="../assets/images/relogio_2.png" alt="" width="22px">Recentes</a></li>
-                <li class="Log_out"><a href="login.html"><img src="../assets/images/log out .png" alt="" width="22px">Log out</a></li>
-                <div id="switch" onclick="toggleMode()">
-                    <button></button>
-                    <span></span>
-                </div>
-                <li class="Cad_Tera"><a href="cadastroTerapeuta.html"><img src="../assets/images/apostila.png" alt="" width="35px">Cadastre-se como
-                        Terapeuta</a></li>
-                
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <main>
-            <input type="text" id="search-bar" placeholder="Buscar perfis...">
-            <div id="profile-container" class="profile-container"></div>
-            <div class="Aba_Favoritos">
-                <div class="Ses_Favoritados">
-                    <h2><img src="../assets/images/Menu.png" alt="" width="23px">Inicio</h2>
-                    <p><strong>Lista de terapeutas</strong></p>
-                    <div class="Caixa_Favoritados" id="favoritos-container">
-                    </div>
-                </div>
-            </div>
-            <script src="../assets/js/home.js"></script>
-        </main>
-    </main>
-    <script src="../assets/js/menu.js"></script>
-</body>
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.topicos');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  
+      if (navLinks.classList.contains('active')) {
+        navLinks.style.maxHeight = navLinks.scrollHeight + 'px';
+        navLinks.style.transition = 'max-height 0.5s ease-out';
+      } else {
+        navLinks.style.transition = 'max-height 0.5s ease-in';
+        navLinks.style.maxHeight = '0px';
+      }
+    });
+  
+    const desfavoritarTodos = document.querySelector('.excluir-perfil');
+  
+    desfavoritarTodos.addEventListener('click', () => {
+      // Seleciona todos os profiles
+      const profiles = document.querySelectorAll('.Favoritados');
+  
+      // Interação entre cada profile
+      profiles.forEach((profile) => {
+        // Remove o profile do DOM
+        profile.remove();
+      });
+  
+      // Adiciona a mensagem no container
+      mostrarMensagemSemFav();
+    });
+  });
+  
+  var mensagemMostrada = false;
+  
+  function mostrarMensagemSemFav() {
+    if(!mensagemMostrada) {
+      const message = document.createElement('p');
+      message.textContent = 'Sem perfis favoritados';
+      message.classList.add('Sem_Favoritos');
+      const container = document.getElementById('favoritos-container');
+      container.appendChild(message);
+      mensagemMostrada = true;
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    fetch('http://localhost:3000/Pef_favoritos') // Faz uma requisição para o JSON Server
+     .then(response => response.json()) // Converte a resposta para JSON
+     .then(data => {
+        const favoritosContainer = document.getElementById('favoritos-container');
+  
+        favoritosContainer.innerHTML = '';
+  
+        // Itera sobre cada item da lista de favoritos
+        data.forEach(favorito => {
+      
+          const divFavorito = document.createElement('div');
+          divFavorito.classList.add('Favoritados');
+  
+          const imagemPerfil = document.createElement('img');
+          imagemPerfil.classList.add('Imagem_perfil');
+          imagemPerfil.src = favorito.image; 
+          imagemPerfil.alt = "Foto de Perfil";
+  
+          const divInfo = document.createElement('div');
+          divInfo.classList.add('Favoritados-info');
+  
+          const linkPerfil = document.createElement('a');
+          linkPerfil.href = 'Perfil_Terapeuta.html'; 
+  
+          const spanNome = document.createElement('span');
+          spanNome.classList.add('Perfil');
+          spanNome.innerHTML = `<strong>${favorito.nome}</strong>`;
+  
+          const spanArea = document.createElement('span');
+          spanArea.classList.add('Especializacao');
+          spanArea.textContent = favorito.area;
+  
+          const favBotton = document.createElement('botton');
+          favBotton.classList.add('excluir-perfil');
+          favBotton.textContent = 'Desfavoritar';
+          favBotton.addEventListener('click', function (e) {
+          
+            const profile = e.target.closest('.Favoritados');
+  
+            if (profile) {
+              profile.remove();
+              const remainingProfiles = document.querySelectorAll('.Favoritados');
+              if (remainingProfiles.length === 0) {
+                mostrarMensagemSemFav();
+              }
+            }
+          });
+  
+          linkPerfil.appendChild(spanNome);
+          divInfo.appendChild(linkPerfil);
+          divInfo.appendChild(spanArea);
+          divInfo.appendChild(favBotton);
+          divFavorito.appendChild(imagemPerfil);
+          divFavorito.appendChild(divInfo);
+  
+          favoritosContainer.appendChild(divFavorito);
+        });
+      })
+     .catch(error => console.error('Erro ao carregar favoritos:', error));
+  });
