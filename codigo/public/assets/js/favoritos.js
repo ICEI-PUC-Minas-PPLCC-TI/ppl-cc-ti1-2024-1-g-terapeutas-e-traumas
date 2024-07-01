@@ -1,40 +1,82 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.topicos');
+document.addEventListener('DOMContentLoaded', function () {
+  const favoritosContainer = document.getElementById('favoritos-container');
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  fetch('http://localhost:3000/Pef_favoritos')
+    .then(response => response.json())
+    .then(data => {
+      favoritosContainer.innerHTML = '';
 
-    if (navLinks.classList.contains('active')) {
-      navLinks.style.maxHeight = navLinks.scrollHeight + 'px';
-      navLinks.style.transition = 'max-height 0.5s ease-out';
-    } else {
-      navLinks.style.transition = 'max-height 0.5s ease-in';
-      navLinks.style.maxHeight = '0px';
-    }
-  });
+      // Filtra apenas os favoritados
+      const favoritados = data.filter(favorito => favorito.favoritado);
 
-  const desfavoritarTodos = document.querySelector('.excluir-perfil');
+      if (favoritados.length === 0) {
+        mostrarMensagemSemFav();
+      } else {
+        favoritados.forEach(favorito => {
+          const divFavorito = document.createElement('div');
+          divFavorito.classList.add('Favoritados');
 
-  desfavoritarTodos.addEventListener('click', () => {
-    // Seleciona todos os profiles
-    const profiles = document.querySelectorAll('.Favoritados');
+          const imagemPerfil = document.createElement('img');
+          imagemPerfil.classList.add('Imagem_perfil');
+          imagemPerfil.src = favorito.image; 
+          imagemPerfil.alt = "Foto de Perfil";
 
-    // Interação entre cada profile
-    profiles.forEach((profile) => {
-      // Remove o profile do DOM
-      profile.remove();
-    });
+          const divInfo = document.createElement('div');
+          divInfo.classList.add('Favoritados-info');
 
-    // Adiciona a mensagem no container
-    mostrarMensagemSemFav();
-  });
+          const linkPerfil = document.createElement('a');
+          linkPerfil.href = 'Perfil_Terapeuta.html'; 
+
+          const spanNome = document.createElement('span');
+          spanNome.classList.add('Perfil');
+          spanNome.innerHTML = `<strong>${favorito.nome}</strong>`;
+
+          const spanArea = document.createElement('span');
+          spanArea.classList.add('Especializacao');
+          spanArea.textContent = favorito.area;
+
+          const favButton = document.createElement('button');
+          favButton.classList.add('excluir-perfil');
+          favButton.textContent = 'Desfavoritar';
+          favButton.addEventListener('click', function (e) {
+            const newStatus = false; // Definir para desfavoritar
+
+            fetch(`http://localhost:3000/Pef_favoritos/${favorito.id}`, {
+              method: 'PATCH',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ favoritado: newStatus })
+            })
+            .then(response => response.json())
+            .then(updatedFavorito => {
+              favorito.favoritado = newStatus; // Atualiza localmente para desfavoritado
+              divFavorito.remove(); // Remove o perfil da lista
+              if (favoritados.length === 1) {
+                mostrarMensagemSemFav();
+              }
+            })
+            .catch(error => console.error('Erro ao desfavoritar:', error));
+          });
+
+          linkPerfil.appendChild(spanNome);
+          divInfo.appendChild(linkPerfil);
+          divInfo.appendChild(spanArea);
+          divInfo.appendChild(favButton);
+          divFavorito.appendChild(imagemPerfil);
+          divFavorito.appendChild(divInfo);
+
+          favoritosContainer.appendChild(divFavorito);
+        });
+      }
+    })
+    .catch(error => console.error('Erro ao carregar favoritos:', error));
 });
 
 var mensagemMostrada = false;
 
 function mostrarMensagemSemFav() {
-  if(!mensagemMostrada) {
+  if (!mensagemMostrada) {
     const message = document.createElement('p');
     message.textContent = 'Sem perfis favoritados';
     message.classList.add('Sem_Favoritos');
@@ -43,86 +85,3 @@ function mostrarMensagemSemFav() {
     mensagemMostrada = true;
   }
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-  fetch('http://localhost:3000/Pef_favoritos') // Faz uma requisição para o JSON Server
-   .then(response => response.json()) // Converte a resposta para JSON
-   .then(data => {
-      const favoritosContainer = document.getElementById('favoritos-container');
-
-      favoritosContainer.innerHTML = '';
-
-      // Itera sobre cada item da lista de favoritos
-      data.forEach(favorito => {
-        if(!favorito.favoritado){return}
-        const divFavorito = document.createElement('div');
-        divFavorito.classList.add('Favoritados');
-
-        const imagemPerfil = document.createElement('img');
-        imagemPerfil.classList.add('Imagem_perfil');
-        imagemPerfil.src = favorito.image; 
-        imagemPerfil.alt = "Foto de Perfil";
-
-        const divInfo = document.createElement('div');
-        divInfo.classList.add('Favoritados-info');
-
-        const linkPerfil = document.createElement('a');
-        linkPerfil.href = 'Perfil_Terapeuta.html'; 
-
-        const spanNome = document.createElement('span');
-        spanNome.classList.add('Perfil');
-        spanNome.innerHTML = `<strong>${favorito.nome}</strong>`;
-
-        const spanArea = document.createElement('span');
-        spanArea.classList.add('Especializacao');
-        spanArea.textContent = favorito.area;
-
-        const favBotton = document.createElement('botton');
-        favBotton.classList.add('excluir-perfil');
-        favButton.addEventListener('click', function (e) {
-          const newStatus = !favorito.favoritado; // Inverte o status atual
-          fetch(`http://localhost:3000/Pef_favoritos/${favorito.id}`, {
-            method: 'PATCH',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ favoritado: newStatus })
-          })
-          .then(response => response.json())
-          .then(updatedFavorito => {
-            favorito.favoritado = newStatus; // Atualiza o status localmente
-            if (newStatus) {
-              favButton.textContent = 'Desfavoritar';
-            } else {
-              favButton.textContent = 'Favoritar';
-            }
-          })
-          .catch(error => console.error('Erro ao atualizar favorito:', error));
-        });
-
-        // favBotton.textContent = 'Desfavoritar';
-        // favBotton.addEventListener('click', function (e) {
-        
-        //   const profile = e.target.closest('.Favoritados');
-
-        //   if (profile) {
-        //     profile.remove();
-        //     const remainingProfiles = document.querySelectorAll('.Favoritados');
-        //     if (remainingProfiles.length === 0) {
-        //       mostrarMensagemSemFav();
-        //     }
-        //   }
-        //});
-
-        linkPerfil.appendChild(spanNome);
-        divInfo.appendChild(linkPerfil);
-        divInfo.appendChild(spanArea);
-        divInfo.appendChild(favBotton);
-        divFavorito.appendChild(imagemPerfil);
-        divFavorito.appendChild(divInfo);
-
-        favoritosContainer.appendChild(divFavorito);
-      });
-    })
-   .catch(error => console.error('Erro ao carregar favoritos:', error));
-});
