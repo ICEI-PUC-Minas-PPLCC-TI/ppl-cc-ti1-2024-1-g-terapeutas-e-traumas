@@ -580,12 +580,6 @@
       "nome": "Sofia Duarte",
       "image": "https://randomuser.me/api/portraits/women/37.jpg",
       "especialidade": "Terapia de Casal"
-    },
-    {
-      "id": "75b7",
-      "nome": "Mariana Lima",
-      "image": "https://randomuser.me/api/portraits/women/55.jpg",
-      "especialidade": "Terapia de Grupo"
     }
   ],
   "Calendario": [

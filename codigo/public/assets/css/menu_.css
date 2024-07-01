@@ -662,4 +662,9 @@
             left: 0;
         }
     }
+
+    .Ses_Favoritados h2 img 
+    {
+      margin-right: 5px !important;
+    }
 }
