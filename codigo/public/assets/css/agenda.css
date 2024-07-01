@@ -98,18 +98,20 @@ body {
 }
 
 .button-container button {
-    background-color: rgb(141, 59, 86);
-    color: white;
+    background-color: rgb(179, 122, 155);
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-family: 'Outfit', sans-serif;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 1s , padding 0.5s , color 1s;
 }
 
 .button-container button:hover {
-    background-color: rgb(219, 65, 117);
+    background-color: rgb(155, 62, 142);
+    color: white;
 }
 
 button {
