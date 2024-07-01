@@ -199,3 +199,82 @@ tbody td:hover {
         max-width: 500px;
     }
 }
+
+.perfil-terapeuta {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    max-width: 90%;
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+.perfil-info {
+    text-align: center;
+}
+
+.perfil-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-info .perfil-details {
+    margin-top: 10px;
+}
+
+.perfil-info h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.perfil-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.perfil-info .fechar-perfil {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666666;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.perfil-info .fechar-perfil:hover {
+    color: #333333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

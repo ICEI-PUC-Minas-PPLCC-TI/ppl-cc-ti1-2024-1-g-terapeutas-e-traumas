@@ -574,6 +574,12 @@
       "nome": "Giulia Ricci",
       "especialidade": "Psicóloga Social",
       "image": "../assets/images/Dra.Ana_Prado.jpg"
+    },
+    {
+      "id": "18f8",
+      "nome": "Sofia Duarte",
+      "image": "https://randomuser.me/api/portraits/women/37.jpg",
+      "especialidade": "Terapia de Casal"
     }
   ],
   "Calendario": [
