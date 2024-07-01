@@ -79,7 +79,7 @@
         border-radius: 10px;
     }
 
-    .topicos li.Favoritos a {
+    .topicos li.Menu a {
         color: rgb(179, 122, 155);
     }
 
@@ -246,7 +246,7 @@
         border-radius: 10px;
     }
 
-    .topicos li.Favoritos a {
+    .topicos li.Menu a {
         color: rgb(179, 122, 155);
     }
 
@@ -354,7 +354,7 @@
         padding: 0;
     }
 
-    .topicos li.Favoritos a {
+    .topicos li.Menu a {
         color: rgb(241, 181, 216);
     }
 
@@ -430,7 +430,7 @@
         margin-left: -25px;
         padding-right: 8px;
     }
-    .topicos li.Favoritos a {
+    .topicos li.Menu a {
         color: rgb(241, 181, 216);
     }
 
