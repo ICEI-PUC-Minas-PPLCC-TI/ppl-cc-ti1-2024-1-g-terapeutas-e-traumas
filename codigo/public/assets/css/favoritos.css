@@ -336,7 +336,7 @@
 
     Copy code body,
     html {
-        background-color: rgb(246, 240, 226);
+        background-color: var(--bg-color);
         margin: 0;
         padding: 0;
     }
