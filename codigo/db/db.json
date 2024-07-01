@@ -570,12 +570,6 @@
   ],
   "agenda": [
     {
-      "id": "1",
-      "nome": "Fernando Farias",
-      "especialidade": "Psicólogo de Casal",
-      "image": "../assets/images/Dr.Luis_Dias.jpg"
-    },
-    {
       "id": "2",
       "nome": "Giulia Ricci",
       "especialidade": "Psicóloga Social",
@@ -679,7 +673,7 @@
       "image": "../assets/images/Dr.Joao_Silva.jpg",
       "area": "Psiquiatria Geriatrica",
       "id": "9bc7",
-      "favoritado": false
+      "favoritado": true
     },
     {
       "nome": "Dr. Luis Dias",
