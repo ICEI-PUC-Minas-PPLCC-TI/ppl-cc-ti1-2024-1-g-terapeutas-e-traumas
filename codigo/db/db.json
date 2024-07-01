@@ -570,22 +570,10 @@
   ],
   "agenda": [
     {
-      "id": "1",
-      "nome": "Fernando Farias",
-      "especialidade": "Psicólogo de Casal",
-      "image": "../assets/images/Dr.Luis_Dias.jpg"
-    },
-    {
       "id": "2",
       "nome": "Giulia Ricci",
       "especialidade": "Psicóloga Social",
       "image": "../assets/images/Dra.Ana_Prado.jpg"
-    },
-    {
-      "id": "3",
-      "nome": "Wiliiam Mattos",
-      "especialidade": "Psicologia Escolar e Educacional",
-      "image": "../assets/images/Dr.Felipe_Souza.jpg"
     }
   ],
   "Calendario": [
@@ -671,49 +659,57 @@
       "nome": "Dra. Ana Costa",
       "image": "../assets/images/Dra.Ana_Costa.jpg",
       "area": "Psiquiatria Infantil",
-      "id": "bc77"
+      "id": "bc77",
+      "favoritado": true
     },
     {
       "nome": "Dr. Joao_Silva",
       "image": "../assets/images/Dr.Joao_Silva.jpg",
       "area": "Psiquiatria Geriatrica",
-      "id": "9bc7"
+      "id": "9bc7",
+      "favoritado": false
     },
     {
       "nome": "Dr. Luis Dias",
       "image": "../assets/images/Dr.Luis_Dias.jpg",
       "area": "Psiquiatria Forense",
-      "id": "ae4f"
+      "id": "ae4f",
+      "favoritado": false
     },
     {
       "nome": "Dra. Rosa Lima",
       "image": "../assets/images/Dra.Rosa_Lima.jpg",
       "area": "Psiquiatria de Adições",
-      "id": "4d16"
+      "id": "4d16",
+      "favoritado": false
     },
     {
       "nome": "Dr. Felipe Souza",
       "image": "../assets/images/Dr.Felipe_Souza.jpg",
       "area": "Psiquiatria Biológica",
-      "id": "c62a"
+      "id": "c62a",
+      "favoritado": false
     },
     {
       "nome": "Dr. José Pinto",
       "image": "../assets/images/Dr.Jose_Pinto.jpg",
       "area": "Psiquiatria de Adultos",
-      "id": "fd05"
+      "id": "fd05",
+      "favoritado": false
     },
     {
       "nome": "Dra. Ana Prado",
       "image": "../assets/images/Dra.Ana_Prado.jpg",
       "area": "Psiquiatria Cultural",
-      "id": "03f2"
+      "id": "03f2",
+      "favoritado": false
     },
     {
       "nome": "Dra.Bianca Pires",
       "image": "../assets/images/Dra.Bianca_Pires.jpg",
       "area": "Neuropsiquiatria",
-      "id": "acc9"
+      "id": "acc9",
+      "favoritado": false
     }
   ]
 }
